@@ -1,0 +1,47 @@
+# Site settings
+title: Aditya Rao
+description: > # this means to ignore newlines until "baseurl:"
+  Personal website and blog for Aditya Rao.
+baseurl: "/adiblog" # the subpath of your site, e.g. /blog
+url: "http://www.raoaditya.com" # the base hostname & protocol for your site
+email: dev.adityarao@gmail.com
+author: Aditya Rao
+
+# Social
+twitter:
+  username: ad1tyarao
+github:
+  username: ad1tyara0
+
+# Build Setting
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Gems
+gems:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+  - jemoji
+  - jekyll-sitemap
+
+# Jekyll Archives
+jekyll-archives:
+  enabled: all
+  layout: 'archive'
+
+# Exclude.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - node_modules
+  - package.json
+  - _assets
+  - _config.dev.yml
+  - _config.test.yml
+  - CNAME
+  - LICENSE
+  - README.md
