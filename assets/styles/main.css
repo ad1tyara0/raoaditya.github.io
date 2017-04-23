@@ -428,3 +428,93 @@ template {
 [hidden] {
   display: none;
 }
+/***** Global Styles *****/
+
+/* Box Sizing */
+html {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+*, *:before, *:after {
+  -moz-box-sizing: inherit;
+       box-sizing: inherit;
+}
+
+/* Clearfix */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* List Styles */
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+/* Link Styles */
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+/***** Mobile first styles go here *****/
+
+/* Wrapper Div */
+.wrap {
+	width: 100%;
+}
+
+header h1 {
+	text-align: center;
+}
+
+/* Row */
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+ 	padding: 12px;
+ 	margin: 12px;
+ 	text-align: center;
+ }
+
+nav a {
+	display: block;
+ 	width: 100%;
+ }
+
+section {
+	width: 100%;
+}
+/***** Desktop styles go here *****/
+@media screen and (min-width: 800px) {
+
+.wrap {
+	width: 100%;
+}
+
+/* Row */
+.row {
+    margin: 0;
+    padding: 0;
+}	
+  
+/* Columns - Columns are created as needed. */
+[class*="col"] {
+    float: left;
+    margin: 10px;
+}
+
+[class="col-1-2"] {
+    width: -webkit-calc((100% - 20px * 2) / 2);
+    width: calc((100% - 20px * 2) / 2);
+}
+}
