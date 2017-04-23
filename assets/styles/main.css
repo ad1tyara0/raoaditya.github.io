@@ -518,9 +518,6 @@ a {
 a:link {
   color: #ff6732;
 }
-a:visited {
-  color: #b43c96; 
-}
 a:hover,
 a:focus {
 color: #94f39f; 
@@ -616,7 +613,7 @@ section {
 	text-align: center;
 }
 
-span {
+.highlight {
 	color: blueviolet;
 }
 
@@ -626,32 +623,31 @@ footer {
 	text-align: center;
 	padding-top: 1em;
 }
-
+.align {
+	text-align: center;
+	margin-bottom: 1em;
+	font-weight: bold;
+}
 .social {
 	margin: 0;
 	margin-bottom: 2em;
 	padding: 0;
 	width: 100%;
 }
-.social > p {
-	text-align: center;
-	margin-bottom: 1em;
-	font-weight: bold;
-}
-.social li {
-	width: 100%;
-	list-style-type: none;
-}
 .social a {
-	padding-top: .6em;
-	display: block;
-	width: 100%; 
+	display: inline-block;
+	width: 6em;
+	height: 3em;
+	margin: 0;
+	padding: 0;
+	text-align: left;
 }
+
 .social a:link {
-	color: transparent;
+	color: #ff6732;
 }
-.social a:nth-child(n):hover, li:nth-child(n):focus {
-	background-color: #f9d475;
+.social a:hover,a:focus {
+	color: #94f39f; 
 }
 
 /************** Desktop styles go here ***************/
