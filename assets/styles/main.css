@@ -441,29 +441,32 @@ html {
        box-sizing: inherit;
 }
 
-/*** Body ***/
-.wrap {
+/*** BODY ***/
+body {
 	background-color: #ffffff;
 	color: #222222;
 	line-height: 1.5;
-	max-width: 1140px;
+	width: 100%;
+	max-width: 63.3334em;
     margin: 0 auto;
     font-size: 18px;
 }
 
-header, section {
-	margin-bottom: 3em;
+header, main {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 2.7778em; /* Approx. 50px */
 }
 
 small {
 	font-size: 65%;
 }
 
-/*** Paragraph ***/
+/*** PARAGRAPH ***/
 p {
 	font-family: 'Noto Sans', Helvetica, sans-serif;
-	margin: 0;
 	font-size: 1em;
+	margin: 0;	
 }
 p + p {
 	text-indent: 1em;
@@ -471,7 +474,9 @@ p + p {
 
 /*** Heading ***/
 h1, h2, h3, h4, h5, h6 {
- font-family: 'Didact Gothic', Arial, Helvetica, sans-serif;
+	font-family: 'Didact Gothic', Arial, Helvetica, sans-serif;
+	margin: 0;
+	margin-bottom: 2.2223em;
 }
 h1 {
 	font-size: 2.986em;
@@ -499,7 +504,6 @@ ul {
 }
 
 li {
-	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
@@ -512,15 +516,17 @@ a:link {
   color: #ff6732;
 }
 a:visited {
-  color: turquoise;
+  color: #b43c96; 
 }
 a:hover,
 a:focus {
-color: #ffa800; }
+color: #94f39f; 
+}
 a:active {
-  color: #ffa98b;
+  color: #ff9d00;
 }
 
+/*** Images ***/
 img {
 	width: auto;
   	max-width: 100%;
@@ -528,65 +534,66 @@ img {
 }
 
 /***** Mobile first styles go here *****/
-/* Wrapper Div */
-.wrap {
-	width: 100%;
-	max-width: 1140px;
-    margin: 0 auto;
-}
 
 /* HEADER */
-header {
-	background-color: #eff7f9;
-}
 
 header h1 {
 	text-align: center;
-	border-bottom: 1px solid #c8bc9d;
 	margin: 0;
 	padding: 0;
+	border-bottom: 1px solid #c8bc9d;
 }
 
 header h1 a {
 	display: block;
 	width: 100%;
-	color: #0f1314;
-	padding: .3em 0;
+	padding: .1em 0;
  }
 
+header h1 a:link {
+	color: #0f1314;
+}
 header h1 a:hover, a:focus {
-	background-color: #ffffff;
+	color: #94f39f;
 }
 
-header h1 a:active {
-	background-color: #ffa98b;
+header h1 a:visited {
+	color: #0f1314;
 }
-
+/* HEADER - NAVIGATION */
 nav li {
-	margin: 0;
- 	padding: 0;
  	text-align: center;
+ 	list-style-type: none;
  	border-bottom: 1px solid #c8bc9d;
  }
 
 nav a {
 	display: block;
+	font-size: 1.1em;
  	width: 100%;
  	text-transform: uppercase;
- 	padding: .3em 0;
- 	font-size: 1.2em;
- 	letter-spacing: 2px;
+ 	padding: .5em 0;
+ 	letter-spacing: 0.12em;
  }
 
  nav a:hover, a:focus {
-	background-color: #ffa800;
+	background-color:  #f9d475;
 	color: #000000;
 }
 
+nav a:visited {
+  color: #b43c96; 
+}
+
 /* SECTION */
+section {
+	margin: 0;
+	padding: 0;
+}
 .avatar {
 	margin: 0;
 	padding: 0;
+	width: 100%;
 	margin-bottom: 2em;
 }
 .avatar div {
@@ -594,68 +601,59 @@ nav a {
 	height: 130px;
 	margin: 0 auto;
 }
-span {
-	color: blueviolet;
-}
 
- .bio {
- 	margin: 0;
+.bio {
  	padding: 0;
- }
+ 	max-width: 42em; 
+ 	margin: 0 auto;
+}
 
 .bio p {
 	padding: 0 1em .5em 1em;
 	text-align: center;
 }
 
+span {
+	color: blueviolet;
+}
+
 /* FOOTER */
 footer {
-	padding-bottom: 3em;
+	width: 100%;
 	text-align: center;
+	padding-top: 1em;
 }
 
 .social {
 	margin: 0;
-	margin-bottom: 3em;
+	margin-bottom: 2em;
 	padding: 0;
 	width: 100%;
 }
-.social p {
+.social > p {
 	text-align: center;
 	margin-bottom: 1em;
-}
-.social ul {
-	margin: 0;
-	padding: 0;
+	font-weight: bold;
 }
 .social li {
-	margin: 0;
-	padding: .5em 0;
-	display: inline-block;
-	width: 9.5em;
+	width: 100%;
 }
 .social a {
+	padding-top: .6em;
 	display: block;
-	max-width: 20em; 
+	width: 100%; 
 }
-
-.social li:nth-child(1) {
-	background-color: #a1ed00;
+.social a:link {
+	color: transparent;
 }
-.social li:nth-child(2) {
-	background-color: #e24e42;
-}
-.social li:nth-child(3) {
-	background-color: #e98000;
-}
-.social li:nth-child(4) {
-	background-color: #008f95;
+.social a:nth-child(n):hover, li:nth-child(n):focus {
+	background-color: #f9d475;
 }
 
 /************** Desktop styles go here ***************/
 /***** TAB ****/
 @media screen and (min-width: 31.1111em) {
-.wrap {
+body {
 	width: 100%;
 	font-size: 1.125em;
 }
@@ -680,7 +678,7 @@ footer {
 
 /***** DESKTOP ****/
 @media screen and (min-width: 44.4444em) {
-.wrap {
+body {
 	width: 100%;
 	font-size: 1.18em;
 }
