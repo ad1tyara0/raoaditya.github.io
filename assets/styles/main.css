@@ -430,24 +430,57 @@ template {
 }
 /***** Global Styles *****/
 
-/* Box Sizing */
+/*** Box Sizing ***/
 html {
   -moz-box-sizing: border-box;
        box-sizing: border-box;
+  font-size: 100%;
 }
 *, *:before, *:after {
   -moz-box-sizing: inherit;
        box-sizing: inherit;
 }
 
-/* Clearfix */
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
+/*** Body ***/
+body {
+	background-color: #ffffff;
+	color: #222222;
+	line-height: 1.5;
 }
 
-/* List Styles */
+/*** Paragraph ***/
+p {
+	font-family: 'Noto Sans', Helvetica, sans-serif;
+	margin: 0;
+}
+p + p {
+	text-indent: 1em;
+}
+
+/*** Heading ***/
+h1, h2, h3, h4, h5, h6 {
+ font-family: 'Didact Gothic', Arial, Helvetica, sans-serif;
+}
+h1 {
+	font-size: 2.986em;
+}
+h2 {
+	font-size: 2.488em;
+}
+h3 {
+	font-size: 2.074em;
+}
+h4 {
+	font-size: 1.728em;
+}
+h5 {
+	font-size: 1.44em;
+}
+h6 {
+	font-size: 1.2em;
+}
+
+/*** List Styles ***/
 ul {
 	margin: 0;
 	padding: 0;
@@ -455,47 +488,111 @@ ul {
 
 li {
 	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
-/* Link Styles */
+/*** Link Styles ***/
 a {
 	text-decoration: none;
-	text-transform: uppercase;
 }
 
 /***** Mobile first styles go here *****/
-
 /* Wrapper Div */
+body {
+	font-size: 16px;
+}
+
 .wrap {
 	width: 100%;
 }
 
+header, section {
+	margin-bottom: 3em;
+}
+
 header h1 {
 	text-align: center;
+	background-color: #eff7f9;
+	margin: 0;
+	padding: 0;
 }
 
-/* Row */
-.row {
-    margin: 0;
-    padding: 0;
+header h1 a {
+	display: block;
+	width: 100%;
+	color: #0f1314;
+	padding: .75em 0;
+ }
+
+header h1 a:hover, a:focus {
+	background-color: #ffffff;
 }
 
-li {
- 	padding: 12px;
- 	margin: 12px;
+header h1 a:active {
+	background-color: #ffa98b;
+}
+
+header li {
+	margin: 0;
+ 	padding: 0;
  	text-align: center;
  }
 
 nav a {
 	display: block;
  	width: 100%;
+ 	text-transform: uppercase;
+ 	color: #ff6732;
+ 	padding: .75em 0;
+ 	font-size: 1.2em;
+ 	letter-spacing: 2px;
  }
+
+ nav a:hover, a:focus {
+	background-color: #ffa800;
+	color: #000000;
+}
 
 section {
 	width: 100%;
 }
+
+.avatar {
+	margin: 0;
+	margin-bottom: 2em;
+	padding: 0;
+}
+.avatar div {
+	width: 130px;
+	height: 130px;
+	margin: 0 auto;
+}
+
+.bio p {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.social {
+	margin: 0;
+	padding: 0;
+}
+.social li {
+	display: inline-block;
+
+}
+.social a {
+	display: block;
+	width: 90px;
+	height: 80px;
+}
+
 /***** Desktop styles go here *****/
 @media screen and (min-width: 800px) {
+body {
+	font-size: 18px;
+}
 
 .wrap {
 	width: 100%;
@@ -517,4 +614,11 @@ section {
     width: -webkit-calc((100% - 20px * 2) / 2);
     width: calc((100% - 20px * 2) / 2);
 }
+}
+
+/* Clearfix */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
 }
