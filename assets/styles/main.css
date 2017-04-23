@@ -637,6 +637,7 @@ footer {
 }
 .social li {
 	width: 100%;
+	list-style-type: none;
 }
 .social a {
 	padding-top: .6em;
