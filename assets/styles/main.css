@@ -455,6 +455,10 @@ header, section {
 	margin-bottom: 3em;
 }
 
+small {
+	font-size: 65%;
+}
+
 /*** Paragraph ***/
 p {
 	font-family: 'Noto Sans', Helvetica, sans-serif;
@@ -503,6 +507,18 @@ li {
 /*** Link Styles ***/
 a {
 	text-decoration: none;
+}
+a:link {
+  color: #ff6732;
+}
+a:visited {
+  color: turquoise;
+}
+a:hover,
+a:focus {
+color: #ffa800; }
+a:active {
+  color: #ffa98b;
 }
 
 img {
@@ -557,7 +573,6 @@ nav a {
 	display: block;
  	width: 100%;
  	text-transform: uppercase;
- 	color: #ff6732;
  	padding: .3em 0;
  	font-size: 1.2em;
  	letter-spacing: 2px;
@@ -579,6 +594,10 @@ nav a {
 	height: 130px;
 	margin: 0 auto;
 }
+span {
+	color: blueviolet;
+}
+
  .bio {
  	margin: 0;
  	padding: 0;
@@ -590,36 +609,48 @@ nav a {
 }
 
 /* FOOTER */
+footer {
+	padding-bottom: 3em;
+	text-align: center;
+}
+
 .social {
 	margin: 0;
 	margin-bottom: 3em;
 	padding: 0;
 	width: 100%;
 }
+.social p {
+	text-align: center;
+	margin-bottom: 1em;
+}
 .social ul {
-	max-width: 16.6666em;
-	width: 200px;
-	margin: 0 auto;
+	margin: 0;
+	padding: 0;
 }
 .social li {
+	margin: 0;
+	padding: .5em 0;
 	display: inline-block;
+	width: 9.5em;
 }
 .social a {
 	display: block;
-	width: 44px;
-	height: 44px;
-	margin-right: .3333em; 
+	max-width: 20em; 
 }
-.social a:hover, a:focus {
-	border: 2px solid #ff6732;
-	border-radius: 50%;
+
+.social li:nth-child(1) {
+	background-color: #a1ed00;
 }
-.social li:last-of-type a {
-	margin-right: 0;
+.social li:nth-child(2) {
+	background-color: #e24e42;
 }
- footer p {
- 	text-align: center;
- }
+.social li:nth-child(3) {
+	background-color: #e98000;
+}
+.social li:nth-child(4) {
+	background-color: #008f95;
+}
 
 /************** Desktop styles go here ***************/
 /***** TAB ****/
