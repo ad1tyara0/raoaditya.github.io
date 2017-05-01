@@ -518,7 +518,7 @@ a:active {
   color: #ff9d00;
 }
 
-/*** Images ***/
+/***** Images *****/
 img {
 	width: auto;
   max-width: 100%;   /* max-width allows image to be responsive. */
@@ -612,32 +612,37 @@ nav a:hover, a:focus {
 
 .highlight {
 	color: blueviolet;
+  border-bottom: 1px solid blueviolet;
 }
 /**********============ SECTION - social ===========***********/
 .social {
+  display: none;
+}
+
+.social-m {
 	margin: 0;
   padding: 1em 0;
 	width: 100%;
   border: 1px solid #c8bc9d;
 }
-.social a {
+.social-m a {
   display: inline-block;
 	margin: 0;
-	padding: .2em;
+	padding: .1em;
 	width: 25%;
   text-align: center;
   border-right: 1px solid #c8bc9d;
 }
-.social a:last-child {
+.social-m a:last-child {
   border-right: none;
 }
-.social a:link {
+.social-m a:link {
 	color: #ff6732;
 }
-.social a:visited {
+.social-m a:visited {
 	color: #ff6732;
 }
-.social a:hover,a:focus {
+.social-m a:hover,a:focus {
 	color: #94f39f;
 }
 
