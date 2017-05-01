@@ -428,87 +428,90 @@ template {
 [hidden] {
   display: none;
 }
-/***** Global Styles *****/
+/*********============== GLOBAL STYLES ==============*********/
 
 /*** Box Sizing ***/
 html {
   -moz-box-sizing: border-box;
        box-sizing: border-box;
   font-size: 100%;
-  height: 100%;
-  margin: 0;
 }
 *, *:before, *:after {
   -moz-box-sizing: inherit;
        box-sizing: inherit;
 }
 
-/*** BODY ***/
+/*** Reset margin & padding to 0. ***/
+header, main, section, footer {
+	margin: 0;
+  margin-top: 24px;
+  margin-top: 1.5rem;
+	padding: 0;
+}
+
+/* CLEARFIX */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Wrapper Div */
+.wrap {
+  width: 95%;
+  max-width: 71.25em;
+  margin: 0 auto;
+}
+
+/******================ FONTS & MARGINS =================******/
 body {
 	background-color: #ffffff;
-	color: #222222;
-	line-height: 1.5;
-	width: 100%;
-	max-width: 63.3334em;
-	height: 100%;
-    margin: 0 auto;
-    font-size: 18px;
-}
-
-header, main {
-	margin: 0;
-	padding: 0;
-	margin-bottom: 2.7778em; /* Approx. 50px */
-}
-
-small {
-	font-size: 65%;
+  font-family: 'Noto Sans', 'Avenir Next', 'SegoeUI', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  min-height: 100%;
 }
 
 /*** PARAGRAPH ***/
 p {
-	font-family: 'Noto Sans', Helvetica, sans-serif;
-	font-size: 1em;
-	margin: 0;	
+  font-size: 1em;
+  max-width: 36em;
+  color: #3b4348;
+	margin: 0;
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
-p + p {
-	text-indent: 1em;
+
+* + p {
+   margin-top: 1.35rem;
 }
 
 /*** Heading ***/
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Didact Gothic', Arial, Helvetica, sans-serif;
+	font-family: 'Droid Serif', 'Georgia Pro', 'Georgia', 'Times', 'Times New Roman', serif;
 	margin: 0;
-	margin-bottom: 2.2223em;
+  margin-top: 24px;          /* non-scalable fallback for old browsers */
+  margin-top: 1.5rem;        /* 24px, will be ignored by old browsers */
 }
 h1 {
-	font-size: 2.986em;
+	font-size: 3.297em;
 }
 h2 {
-	font-size: 2.488em;
+	font-size: 2.703em;
 }
 h3 {
-	font-size: 2.074em;
+	font-size: 2.215em;
 }
 h4 {
-	font-size: 1.728em;
+	font-size: 1.816em;
 }
 h5 {
-	font-size: 1.44em;
+	font-size: 1.488em;
 }
 h6 {
-	font-size: 1.2em;
-}
-
-/*** List Styles ***/
-ul {
-	margin: 0;
-	padding: 0;
-}
-
-li {
-	margin: 0;
-	padding: 0;
+	font-size: 1.22em;
 }
 
 /*** Link Styles ***/
@@ -520,7 +523,7 @@ a:link {
 }
 a:hover,
 a:focus {
-color: #94f39f; 
+color: #94f39f;
 }
 a:active {
   color: #ff9d00;
@@ -529,8 +532,8 @@ a:active {
 /*** Images ***/
 img {
 	width: auto;
-  	max-width: 100%;
-  	height: auto;
+  max-width: 100%;   /* max-width allows image to be responsive. */
+  height: auto;
 }
 
 /***** Mobile first styles go here *****/
@@ -538,63 +541,55 @@ img {
 /* HEADER */
 
 header h1 {
-	text-align: center;
 	margin: 0;
 	padding: 0;
-	border-bottom: 1px solid #c8bc9d;
+	/*border-bottom: 1px solid #c8bc9d;*/
 }
 
 header h1 a {
 	display: block;
 	width: 100%;
-	padding: .1em 0;
- }
-
+  text-align: center;
+}
 header h1 a:link {
-	color: #0f1314;
+	color: #000;
 }
 header h1 a:hover, a:focus {
-	color: #94f39f;
+	color: #3b423c;
 }
-
-header h1 a:visited {
+header h1 a:active {
 	color: #0f1314;
 }
+
 /* HEADER - NAVIGATION */
-nav li {
- 	text-align: center;
- 	list-style-type: none;
- 	border-bottom: 1px solid #c8bc9d;
+nav {
+  margin-top: 1rem;
+ 	border: 1px solid #c8bc9d;
  }
 
 nav a {
-	display: block;
+	display: inline-block;
 	font-size: 1.1em;
- 	width: 100%;
+ 	width: 50%;
  	text-transform: uppercase;
- 	padding: .5em 0;
+  text-align: center;
+ 	padding: 1em 0;
+  margin: 0;
  	letter-spacing: 0.12em;
  }
 
- nav a:hover, a:focus {
+nav a:hover, a:focus {
 	background-color:  #f9d475;
 	color: #000000;
 }
 
-nav a:visited {
-  color: #b43c96; 
-}
-
-/* SECTION */
-section {
+/**********============ SECTION - about ===========***********/
+.avatar, .bio {
 	margin: 0;
-	padding: 0;
-}
-.avatar {
-	margin: 0;
+  margin-top: 24px;
+  margin-top: 1.5rem;
 	padding: 0;
 	width: 100%;
-	margin-bottom: 2em;
 }
 .avatar div {
 	width: 130px;
@@ -602,68 +597,68 @@ section {
 	margin: 0 auto;
 }
 
-.bio {
- 	padding: 0;
- 	max-width: 42em; 
- 	margin: 0 auto;
+.bio > p {
+  max-width: 36em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.bio p {
-	padding: 0 1em .5em 1em;
-	text-align: center;
+.bio > * + * {
+  margin-top: 1.1rem;
 }
 
 .highlight {
 	color: blueviolet;
 }
-
-/* FOOTER */
-footer {
-	width: 100%;
-	text-align: center;
-	padding-top: 1em;
-}
-.align {
-	text-align: center;
-	margin-bottom: 1em;
-	font-weight: bold;
-}
+/**********============ SECTION - social ===========***********/
 .social {
 	margin: 0;
-	margin-bottom: 2em;
-	padding: 0;
+  padding: 1em 0;
 	width: 100%;
+  border: 1px solid #c8bc9d;
 }
 .social a {
-	display: inline-block;
-	width: 6em;
-	height: 3em;
+  display: inline-block;
 	margin: 0;
-	padding: 0;
-	text-align: left;
+	padding: .2em;
+	width: 25%;
+  text-align: center;
+  border-right: 1px solid #c8bc9d;
 }
-
+.social a:last-child {
+  border-right: none;
+}
 .social a:link {
 	color: #ff6732;
 }
 .social a:hover,a:focus {
-	color: #94f39f; 
+	color: #94f39f;
+}
+
+/*********===== FOOTER ======*********/
+
+footer .wrap > * + * {
+  margin-top: 1.5rem;
+}
+footer p {
+  text-align: center;
 }
 
 /************** Desktop styles go here ***************/
 /***** TAB ****/
-@media screen and (min-width: 31.1111em) {
+@media screen and (min-width: 35em) {
 body {
 	width: 100%;
-	font-size: 1.125em;
+	font-size: 1.18em;
 }
 
 /* Row */
 .row {
     margin: 0;
     padding: 0;
-}	
-  
+}
+
 /* Columns - Columns are created as needed. */
 [class*="col"] {
     float: left;
@@ -677,18 +672,18 @@ body {
 }
 
 /***** DESKTOP ****/
-@media screen and (min-width: 44.4444em) {
+@media screen and (min-width: 50em) {
 body {
 	width: 100%;
-	font-size: 1.18em;
+	font-size: 1.1em;
 }
 
 /* Row */
 .row {
     margin: 0;
     padding: 0;
-}	
-  
+}
+
 /* Columns - Columns are created as needed. */
 [class*="col"] {
     float: left;
@@ -701,7 +696,7 @@ body {
 }
 }
 /* Clearfix */
-.group:after {
+.clearfix:after {
   content: "";
   display: table;
   clear: both;
