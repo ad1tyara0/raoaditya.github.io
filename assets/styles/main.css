@@ -449,30 +449,16 @@ header, main, section, footer {
 	padding: 0;
 }
 
-/* CLEARFIX */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Wrapper Div */
-.wrap {
-  width: 95%;
-  max-width: 71.25em;
-  margin: 0 auto;
-}
-
 /******================ FONTS & MARGINS =================******/
 body {
 	background-color: #ffffff;
   font-family: 'Noto Sans', 'Avenir Next', 'SegoeUI', 'Arial', sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  min-height: 100%;
+  height: 100%;
 }
 
-/*** PARAGRAPH ***/
+/*** Paragraph ***/
 p {
   font-size: 1em;
   max-width: 36em;
@@ -521,6 +507,9 @@ a {
 a:link {
   color: #ff6732;
 }
+a:visited {
+  color: #ff6732;
+}
 a:hover,
 a:focus {
 color: #94f39f;
@@ -538,12 +527,17 @@ img {
 
 /***** Mobile first styles go here *****/
 
-/* HEADER */
+/**** Wrapper Div ****/
+.wrap {
+  width: 95%;
+  max-width: 71.25em;
+  margin: 0 auto;
+}
+
+/*********====== HEADER ======**********/
 
 header h1 {
-	margin: 0;
 	padding: 0;
-	/*border-bottom: 1px solid #c8bc9d;*/
 }
 
 header h1 a {
@@ -554,6 +548,9 @@ header h1 a {
 header h1 a:link {
 	color: #000;
 }
+header h1 a:visited {
+	color: #000;
+}
 header h1 a:hover, a:focus {
 	color: #3b423c;
 }
@@ -561,7 +558,7 @@ header h1 a:active {
 	color: #0f1314;
 }
 
-/* HEADER - NAVIGATION */
+/******===== HEADER - Navigation =====******/
 nav {
   margin-top: 1rem;
  	border: 1px solid #c8bc9d;
@@ -577,7 +574,12 @@ nav a {
   margin: 0;
  	letter-spacing: 0.12em;
  }
-
+nav a:link {
+  color: #ff6732;
+}
+nav a:visited {
+  color: #ff6732;
+}
 nav a:hover, a:focus {
 	background-color:  #f9d475;
 	color: #000000;
@@ -632,11 +634,14 @@ nav a:hover, a:focus {
 .social a:link {
 	color: #ff6732;
 }
+.social a:visited {
+	color: #ff6732;
+}
 .social a:hover,a:focus {
 	color: #94f39f;
 }
 
-/*********===== FOOTER ======*********/
+/************========= FOOTER ==========*************/
 
 footer .wrap > * + * {
   margin-top: 1.5rem;
