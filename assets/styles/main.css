@@ -446,9 +446,21 @@ html {
 body {
 	background-color: #ffffff;
   font-family: 'Noto Sans', 'Avenir Next', 'SegoeUI', 'Arial', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
+	font-size: -webkit-calc(14px + 7 * ((100vw - 380px) / 760));
+	font-size: calc(14px + 7 * ((100vw - 380px) / 760));
   line-height: 1.5;
-  height: 100%;
+	min-height: 100%;
+}
+@media screen and (min-width: 1140px) {
+  body {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 380px) {
+  body {
+    font-size: 14px;
+  }
 }
 
 /*** Paragraph ***/
@@ -471,26 +483,8 @@ p {
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Droid Serif', 'Georgia Pro', 'Georgia', 'Times', 'Times New Roman', serif;
 	margin: 0;
-  margin-top: 24px;          /* non-scalable fallback for old browsers */
-  margin-top: 1.5rem;        /* 24px, will be ignored by old browsers */
-}
-h1 {
-	font-size: 3.297em;
-}
-h2 {
-	font-size: 2.703em;
-}
-h3 {
-	font-size: 2.215em;
-}
-h4 {
-	font-size: 1.816em;
-}
-h5 {
-	font-size: 1.488em;
-}
-h6 {
-	font-size: 1.22em;
+  margin-top: 21px;          /* non-scalable fallback for old browsers */
+  margin-top: 1.5rem;        /* 21px, will be ignored by old browsers */
 }
 
 /*** Link Styles ***/
@@ -526,8 +520,6 @@ header, main, section, footer {
 	padding: 0;
 }
 
-/***** Mobile first styles go here *****/
-
 /**** Wrapper Div ****/
 .wrap {
   width: 95%;
@@ -535,69 +527,271 @@ header, main, section, footer {
   margin: 0 auto;
 }
 
-/*********====== HEADER ======**********/
+/***** Mobile first styles go here *****/
 
-header h1 {
-	padding: 0;
+	/*********====== HEADER ======**********/
+
+	header h1 {
+		padding: 0;
+	}
+
+	header h1 a {
+		display: block;
+		width: 100%;
+	  text-align: center;
+	}
+	header h1 a:link {
+		color: #000;
+	}
+	header h1 a:visited {
+		color: #000;
+	}
+	header h1 a:hover, a:focus {
+		color: #3b423c;
+	}
+	header h1 a:active {
+		color: #0f1314;
+	}
+
+	/******===== HEADER - Navigation =====******/
+	nav {
+	  margin-top: 1rem;
+	 	border: 1px solid #c8bc9d;
+	 }
+
+	nav a {
+		display: inline-block;
+		font-size: 1.1em;
+	 	width: 50%;
+	 	text-transform: uppercase;
+	  text-align: center;
+	 	padding: 1em 0;
+	  margin: 0;
+	 	letter-spacing: 0.12em;
+	 }
+	nav a:link {
+	  color: #ff6732;
+	}
+	nav a:visited {
+	  color: #ff6732;
+	}
+	nav a:hover, a:focus {
+		background-color:  #f9d475;
+		color: #000000;
+	}
+
+	/**********============ SECTION - about ===========***********/
+	.avatar, .bio {
+		margin: 0;
+	  margin-top: 24px;
+	  margin-top: 1.5rem;
+		padding: 0;
+		width: 100%;
+	}
+	.avatar div {
+		width: 130px;
+		height: 130px;
+		margin: 0 auto;
+	}
+
+	.bio > p {
+	  max-width: 36em;
+	  text-align: center;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+
+	.bio > * + * {
+	  margin-top: 1.1rem;
+	}
+
+	.highlight {
+		color: blueviolet;
+	  border-bottom: 1px solid blueviolet;
+	}
+	/**********============ SECTION - social ===========***********/
+	.social {
+	  display: none;
+	}
+
+	.social-m {
+		margin: 1.5rem 0 0;
+	  padding: 1em 0;
+		width: 100%;
+	  border: 1px solid #c8bc9d;
+	}
+	.social-m a {
+	  display: inline-block;
+		margin: 0;
+		padding: .1em;
+		width: 25%;
+	  text-align: center;
+	  border-right: 1px solid #c8bc9d;
+	}
+	.social-m a:last-child {
+	  border-right: none;
+	}
+	.social-m a:link {
+		color: #ff6732;
+	}
+	.social-m a:visited {
+		color: #ff6732;
+	}
+	.social-m a:hover,a:focus {
+		color: #94f39f;
+	}
+
+	/************========= FOOTER ==========*************/
+
+	footer, .push {
+	  text-align: center;
+	}
+	footer .wrap > * + * {
+	  margin-top: 1.5rem;
+	}
+
+
+
+  .one,
+  .one-third,
+  .two-thirds,
+  .one-fourth,
+  .half {
+    width: 100%;
+  }
+
+/************** Desktop styles go here ***************/
+/***** TAB ****/
+@media screen and (min-width: 40em) {
+
+/**** Wrapper Div ****/
+.wrap {
+  width: 95%;
+  max-width: 60em;
+  margin: 0 auto;
 }
 
-header h1 a {
-	display: block;
-	width: 100%;
-  text-align: center;
-}
-header h1 a:link {
-	color: #000;
-}
-header h1 a:visited {
-	color: #000;
-}
-header h1 a:hover, a:focus {
-	color: #3b423c;
-}
-header h1 a:active {
-	color: #0f1314;
+body {
+  position:relative;
+  padding-bottom: 80px;
 }
 
-/******===== HEADER - Navigation =====******/
-nav {
-  margin-top: 1rem;
- 	border: 1px solid #c8bc9d;
- }
+.one {
+    width: 100%;
+  }
+  .half {
+    width: -webkit-calc(100% / 2);
+    width: calc(100% / 2);
+  }
+  .one-third {
+    width: -webkit-calc(100% / 3);
+    width: calc(100% / 3);
+  }
+  .one-fourth {
+    width: -webkit-calc(100% / 4);
+    width: calc(100% / 4);
+  }
+  .two-thirds {
+    width: -webkit-calc(100% / 3 * 2);
+    width: calc(100% / 3 * 2);
+  }
+  .column {
+    float: left;
+  }
 
-nav a {
-	display: inline-block;
-	font-size: 1.1em;
- 	width: 50%;
- 	text-transform: uppercase;
-  text-align: center;
- 	padding: 1em 0;
-  margin: 0;
- 	letter-spacing: 0.12em;
- }
-nav a:link {
-  color: #ff6732;
-}
-nav a:visited {
-  color: #ff6732;
-}
-nav a:hover, a:focus {
-	background-color:  #f9d475;
-	color: #000000;
+  /* CLEARFIX */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /*********** Header **********/
+  header {
+    margin: 0;
+    padding: 1.5rem 0;
+    border-bottom: 2px solid #c8bc9d;
+  }
+
+  header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    height: 50px;
+  }
+
+  header h1 a {
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+  header h1 a:link {
+    color: #000;
+  }
+  header h1 a:visited {
+    color: #000;
+  }
+  header h1 a:hover, a:focus {
+    color: #f9d475;
+  }
+  header h1 a:active {
+    color: #0f1314;
+  }
+
+  /******===== HEADER - Navigation =====******/
+  nav {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    line-height: 50px;
+    border: none;
+   }
+
+  .nav {
+    max-width: 18.75em;
+    margin: 0 auto;
+  }
+
+  nav a {
+    display: inline-block;
+    font-size: 1.1em;
+    width: 50%;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 0.12em;
+   }
+  nav a:link {
+    color: #ff6732;
+  }
+  nav a:visited {
+    color: #ff6732;
+  }
+  nav a:hover, a:focus {
+    background-color:  #f9d475;
+    color: #000000;
+  }
+
+/******* MAIN ********/
+main {
+  margin-top: 8rem;
 }
 
 /**********============ SECTION - about ===========***********/
 .avatar, .bio {
-	margin: 0;
+  margin: 0;
   margin-top: 24px;
-  margin-top: 1.5rem;
-	padding: 0;
-	width: 100%;
+  margin-top: 2rem;
+  padding: 0;
+  width: 100%;
 }
 .avatar div {
-	width: 130px;
-	height: 130px;
-	margin: 0 auto;
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
 }
 
 .bio > p {
@@ -612,63 +806,62 @@ nav a:hover, a:focus {
 }
 
 .highlight {
-	color: blueviolet;
+  color: blueviolet;
   border-bottom: 1px solid blueviolet;
 }
+
 /**********============ SECTION - social ===========***********/
-.social {
+.social-m {
   display: none;
 }
 
-.social-m {
-	margin: 1.5rem 0 0;
+.social {
+  display: block;
   padding: 1em 0;
-	width: 100%;
-  border: 1px solid #c8bc9d;
+  width: 50%;
+  margin: 1.5rem auto 0;
 }
-.social-m a {
+.social a {
   display: inline-block;
-	margin: 0;
-	padding: .1em;
-	width: 25%;
+  margin: 0;
+  padding: .1em;
+  width: 25%;
   text-align: center;
-  border-right: 1px solid #c8bc9d;
 }
-.social-m a:last-child {
+.social a:last-child {
   border-right: none;
 }
-.social-m a:link {
-	color: #ff6732;
+.social a:link {
+  color: #ff6732;
 }
-.social-m a:visited {
-	color: #ff6732;
+.social a:visited {
+  color: #ff6732;
 }
-.social-m a:hover,a:focus {
-	color: #94f39f;
+.social a:hover,a:focus {
+  color: #94f39f;
 }
 
 /************========= FOOTER ==========*************/
 
-footer, .push {
+footer p {
   text-align: center;
+  margin: 0 auto;
 }
-footer .wrap > * + * {
-  margin-top: 1.5rem;
+footer .wrap > p + p {
+  margin-top: 1em;
+}
+footer {
+    position: absolute;
+    left: 0 ; right: 0; bottom: 0;
+    height: 80px;
+}
+footer small {
+  font-size: 65%;
+}
 }
 
-/************** Desktop styles go here ***************/
-/***** TAB ****/
-@media screen and (min-width: 35em) {
-body {
-	width: 100%;
-	font-size: 1.18em;
-}
-}
 
 /***** DESKTOP ****/
 @media screen and (min-width: 50em) {
-body {
-	width: 100%;
-	font-size: 1.1em;
-}
+
 }
