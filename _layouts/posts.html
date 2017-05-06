@@ -1,8 +1,11 @@
 ---
 layout: default
 ---
+<div class="wrap post-wrap">
+  <article class="post-article">
+    <h2 class="post-title">{{ page.title }}</h2>
+    <p class="post-date">{{ page.date | date: '%B %d, %Y' }}</p>
 
-<h2 class="blog-title">{{ page.title }}</h2>
-<p>{{ page.date | date: '%B %d, %Y' }}</p>
-
-{{ content }}
+    {{ content }}
+  </article>
+</div>

@@ -2,9 +2,9 @@
 layout: default
 title: Aditya Rao - Blog
 ---
-  <main>
-    <div class="wrap">
-			<ul>
+  <main class="blog-main">
+    <div class="wrap blog-wrap">
+			<ul class="blog-list">
   			{% for post in site.posts %}
     			<li><a href="{{ post.url }}">{{ post.title }}</a></li>
   			{% endfor %}

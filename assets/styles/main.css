@@ -524,6 +524,10 @@ header, main, section {
   max-width: 71.25em;
   margin: 0 auto;
 }
+ ul ,li {
+	 margin: 0;
+	 padding: 0;
+ }
 
 /***** Mobile first styles go here *****/
 
@@ -661,6 +665,32 @@ header, main, section {
     width: 100%;
   }
 
+  /* Blog Page Styles */
+  .blog-main {
+    margin-top: 3rem;
+  }
+  .blog-list {
+    list-style: none;
+    padding: 1rem;
+  }
+  .blog-list li {
+    font-size: 1.2em;
+  }
+  .post-wrap {
+    max-width: 50em;
+    margin: 0 auto;
+  }
+  .post-article {
+    margin-top: 4rem;
+    line-height: 1.6;
+  }
+  .post-article p {
+    max-width: 100%;
+  }
+  .post-date {
+    font-size: .75em;
+    margin: .5rem 0 1.5rem;
+  }
 /**************======= Desktop styles go here ========***************/
 
 /***** TAB ****/
@@ -854,8 +884,33 @@ footer small {
   font-size: 65%;
 }
 }
-
-
+/* Blog Page Styles */
+.blog-wrap {
+  max-width: 45em;
+  margin: 0 auto;
+}
+.blog-main {
+  margin-top: 3rem;
+}
+.blog-list {
+  list-style: none;
+  padding: 1rem;
+}
+.blog-list li {
+  font-size: 1.2em;
+}
+.post-wrap {
+  max-width: 50em;
+  margin: 0 auto;
+}
+.post-article {
+  margin-top: 4rem;
+  line-height: 1.6;
+}
+.post-date {
+  font-size: .75em;
+  margin: .5rem 0 1.5rem;
+}
 /***** DESKTOP ****/
 @media screen and (min-width: 64em) {
 .social {
