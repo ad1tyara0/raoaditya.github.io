@@ -652,7 +652,7 @@ header, main, section {
     position: absolute;
 		left: 0 ; right: 0; bottom: 0;
 		height: 70px;
-		background-color: inherit;
+		background-color: none;
 	}
 	footer > p + p {
     margin-top: .5em;
