@@ -642,7 +642,9 @@ header, main, section {
 	.social-m a:hover,a:focus {
 		color: #94f39f;
 	}
-
+  main {
+    padding-bottom: 1.5rem;
+  }
 	/************========= FOOTER ==========*************/
 
 	footer {
