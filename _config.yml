@@ -2,7 +2,7 @@
 title: Aditya Rao
 description: > # this means to ignore newlines until "baseurl:"
   Personal website and blog for Aditya Rao.
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "raoaditya" # the subpath of your site, e.g. /blog
 url: "http://www.raoaditya.com" # the base hostname & protocol for your site
 permalink: pretty
 google_analytics_key: UA-98713891-1
