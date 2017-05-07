@@ -49,7 +49,7 @@ gulp.task('build:styles', function () {
        .pipe(concat('main.css'))
        .pipe(gulp.dest(paths.jekyllCssFiles))
        .pipe(gulp.dest(paths.siteCssFiles))
-       .on('error', gutil.log);      
+       .on('error', gutil.log);
 });
 */
 gulp.task('build:styles', function() {
@@ -103,14 +103,14 @@ gulp.task('clean:styles', function(callback) {
 });
 
 // Images Task
- 
+
  gulp.task('build:images', function() {
     gulp.src(paths.imageFilesGlob)
         .pipe(imagemin())
         .pipe(gulp.dest(paths.jekyllImageFiles))
         .pipe(gulp.dest(paths.siteImageFiles))
         .pipe(browserSync.stream());
-}); 
+});
 
 // Deletes processed images.
 gulp.task('clean:images', function(callback) {
@@ -219,14 +219,14 @@ gulp.task('build:scripts:watch', ['build:scripts'], function(callback) {
     browserSync.reload();
     callback();
 });
-*/ 
+*/
 // 'build:jekyll:local' is used for local builds.
 // 'build' is used for production build.
 // 'build:jekyll:local' used for test builds.
 // Use `gulp serve` command to run browserSync.
 // Simply `gulp` will build files.
-gulp.task('serve', ['build:jekyll:local'], function () {           
-    // Serve files from the root of this project                   
+gulp.task('serve', ['build:jekyll:local'], function () {
+    // Serve files from the root of this project
     browserSync.init({
         files: [paths.siteDir + '/**'],
         server: paths.siteDir,
