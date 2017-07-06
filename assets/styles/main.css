@@ -959,7 +959,7 @@ footer>p+p {
 /* Blog Page Styles */
 
 .blog-wrap {
-    max-width: 45em;
+    max-width: 42em;
     margin: 0 auto;
 }
 
@@ -977,7 +977,7 @@ footer>p+p {
 }
 
 .post-wrap {
-    max-width: 50em;
+    max-width: 45em;
     margin: 0 auto;
 }
 
@@ -989,6 +989,85 @@ footer>p+p {
 .post-date {
     font-size: .75em;
     margin: .5rem 0 1.5rem;
+}
+
+
+/* Introduces Vertical Rhythm.
+* Whitespace above subhead is larger than whitespace below subhead
+*/
+
+.post-article p+h2 {
+    margin-top: 2.1rem;
+}
+
+.post-article h2+p {
+    margin-top: 0.7rem;
+}
+
+.post-article p+h3 {
+    margin-top: 2.1rem;
+}
+
+.post-article h3+p {
+    margin-top: 0.7rem;
+}
+
+.post-article p+h4 {
+    margin-top: 2.1rem;
+}
+
+.post-article h4+p {
+    margin-top: 0.7rem;
+}
+
+
+/* Introduces Vertical Rhythm.
+* Whitespace above list items.
+*/
+
+.post-article ul,
+li {
+    margin-top: 1.05rem;
+    padding: 0;
+}
+
+.post-article ul p,
+li p {
+    margin: 0;
+    padding: 0;
+}
+
+.post-article ul {
+    margin-left: 1rem;
+    list-style-position: outside;
+}
+
+.post-article li+li {
+    margin-top: 1.5rem;
+}
+
+.post-article p+p {
+    margin-top: 0.7rem;
+}
+
+.post-article ul {
+    margin-left: 2.5rem;
+}
+
+.post-article ul+p {
+    margin-top: 0.8rem;
+}
+
+
+/* Heading Colors */
+
+.post-wrap h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #0056A8;
 }
 
 

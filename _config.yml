@@ -20,7 +20,9 @@ github:
 markdown: kramdown
 kramdown:
   input: GFM
+  hard_wrap: false
   syntax_highlighter: rouge
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
 
 # Gems
 gems:
