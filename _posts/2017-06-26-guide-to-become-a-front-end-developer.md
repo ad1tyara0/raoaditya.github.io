@@ -34,7 +34,7 @@ So, let's begin with finding out what's web development like today.
 
 > Web development is a broad term for the work involved in developing a web site for the Internet (World Wide Web) or an intranet (a private network). Web development can range from developing the simplest static single page of plain text to the most complex web-based internet applications (or just 'web apps') electronic businesses, and social network services. A more comprehensive list of tasks to which web development commonly refers, may include web engineering, web design, web content development, client liaison, client-side/server-side scripting, web server and network security configuration, and e-commerce development.
 >
-> -- [Wikipedia ( Web Development )][52]
+> \-- [Wikipedia ( Web Development )][52]
 
 Today we are running entire businesses online with database for thousands of products, displayed on simple to navigate and functional webpage. Security for users data and performance on different connections still remain big cocern today.
 Today developers do not concern themselves with all aspects of development, instead they specialize in different domains.
@@ -139,11 +139,11 @@ The following websites may prove useful to better understand certain concepts th
 -   [A Complete Guide to Grid][26]
     _Learn CSS Grid Layout._
 
-* * *
+<hr class="line" />
 
 ### Javascript
 
-**Javascript** is a programming language used to add functionality to your web pages and make them more dynamic. JavaScript adds behaviour to the web page where the web page is capable of responding to actions by your visitors without needing to load a new web page in order to process their request. 
+**Javascript** is a programming language used to add functionality to your web pages and make them more dynamic. JavaScript adds behaviour to the web page where the web page is capable of responding to actions by your visitors without needing to load a new web page in order to process their request.
 JavaScript isn’t just for browsers anymore. The language is being used on the server thanks to Node.js, on desktop devices and mobiles through platforms such as Electron and Cordova.
 
 #### Websites
@@ -180,11 +180,11 @@ JavaScript isn’t just for browsers anymore. The language is being used on the 
 -   [Javascript 30][36]
     _Build 30 things in 30 days with 30 tutorials._
 
-* * *
+<hr class="line" />
 
 ### Related technologies
 
-For any front-end developer, tools such as a text editor and browsers provide powerful capabilities. When mastered they make your development process easier and more productive. 
+For any front-end developer, tools such as a text editor and browsers provide powerful capabilities. When mastered they make your development process easier and more productive.
 
 #### Browsers
 
@@ -194,8 +194,7 @@ This is a list of popular browsers in use. Based on your Operating System (and v
 -   [Firefox][38]
 -   [Opera][39]
 
-
-There is also what is called the **Developer Edition** of popular browsers, that are marketed to developers. These browsers implement the latest technologies, and powerful tools that simplify debugging and testing. 
+There is also what is called the **Developer Edition** of popular browsers, that are marketed to developers. These browsers implement the latest technologies, and powerful tools that simplify debugging and testing.
 
 -   [Chrome Canary][40]
 -   [Firefox Developer Edition][41]
@@ -210,7 +209,6 @@ Note: There is also **Safari** and **Microsoft Edge** that are available for Mac
 
 Note: Dev Tools work mostly same on every browser. If you are using browser other than Chrome or Firefox than I suggest that you learn dev tools using Chrome / Firefox.
 
-
 #### Text Editors
 
 Default text editors provided by your OS is not exactly productive for web development. There are some great text-editors that provide boatload of functionality. They makes writing and editing code much easier.
@@ -224,7 +222,6 @@ Below is a list of popular, free text-editors used for web development.
 -   [Visual Studio Code][50]
     _Master VSCode editor using [this tutorial][51]._
 
-
 #### Version Control
 
 Nearly every project out there is using a _**Version Control System (VCS)**._
@@ -233,7 +230,7 @@ For whatever reasons, if you want to undo the changes you made across the projec
 
 😎 _" Have no fear, because **Version Control** is here. "_
 
-Lame, but it does rescue you by allowing you to restore your project to a previous state. 
+Lame, but it does rescue you by allowing you to restore your project to a previous state.
 There are many VCS in use today. The most popular is [Git][66] which was created by [Linus Torvalds][44], who created the linux kernel. Part of the reason git became popular as it is today is because of [Github][67]. Github allows you to host your code online and integrates git for version control.
 
 Use the links below to learn Git & Github.
@@ -247,8 +244,7 @@ Use the links below to learn Git & Github.
 -   [Try Git][47]
     _15 minutes to get up to speed with git.(Well..., at least the basics.)_
 
-
-* * *
+<hr class="line" />
 
 This is by no means an exhaustive list of front-end technologies and resources. I will update the related technologies section in future.
 Meanwhile, these are some more guides/roadmaps that will surely help you. Do check them out.
@@ -257,8 +253,6 @@ Meanwhile, these are some more guides/roadmaps that will surely help you. Do che
 2.  [Web Developer Roadmap.][3]
 3.  [Front-End Developer Handbook 2017.][4]
     ( You can read this book online for free or download PDF, ePub or Mobi.)
-
-* * *
 
 [1]: https://en.wikipedia.org/wiki/Front-end_web_development "Front-end_web_development"
 

@@ -1,28 +1,28 @@
 # Site settings
-title: Aditya Rao
-description: > # this means to ignore newlines until "baseurl:"
+title:                Aditya Rao
+description:          > # this means to ignore newlines until "baseurl:"
   Personal website and blog for Aditya Rao.
-baseurl: "raoaditya" # the subpath of your site, e.g. /blog
-url: "http://www.raoaditya.com" # the base hostname & protocol for your site
-permalink: pretty
+baseurl:              "raoaditya" # the subpath of your site, e.g. /blog
+url:                  "http://www.raoaditya.com" # the base hostname & protocol for your site
+permalink:            pretty
 google_analytics_key: UA-98713891-1
-disqus_shortname: adi_rao
-email: dev.adityarao@gmail.com
-author: Aditya Rao
+disqus_shortname:     adi_rao
+email:                dev.adityarao@gmail.com
+author:               Aditya Rao
 
 # Social
 twitter:
-  username: ad1tyarao
+  username:           ad1tyarao
 github:
-  username: ad1tyara0
+  username:           ad1tyara0
 
 # Build Setting
-markdown: kramdown
+markdown:             kramdown
 kramdown:
-  input: GFM
-  hard_wrap: false
+  input:              GFM
+  hard_wrap:          false
   syntax_highlighter: rouge
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  smart_quotes:       lsquo,rsquo,ldquo,rdquo
 
 # Gems
 gems:
@@ -33,8 +33,8 @@ gems:
 
 # Jekyll Archives
 jekyll-archives:
-  enabled: all
-  layout: 'archive'
+  enabled:            all
+  layout:             'archive'
 
 # Exclude.
 exclude:

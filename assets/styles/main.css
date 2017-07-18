@@ -504,7 +504,7 @@ a:visited {
 
 a:focus,
 a:hover {
-  color: #94f39f;
+  color: #FFBA5B;
 }
 
 a:active {
@@ -536,7 +536,7 @@ ul {
   margin: 0;
   padding: 0;
 }
-/***** Mobile first styles go here *****/
+/***** Mobile styles *****/
 /*********====== HEADER ======**********/
 header h1 {
   padding: 0;
@@ -689,6 +689,11 @@ footer > p+p {
   width: 100%;
 }
 /* Blog Page Styles */
+.blog-wrap {
+  max-width: 42em;
+  margin: 0 auto;
+}
+
 .blog-main {
   margin-top: 3rem;
 }
@@ -696,20 +701,43 @@ footer > p+p {
 .blog-list {
   list-style: none;
   padding: 1rem;
+  max-width: 40em;
+  margin: 0 auto;
 }
 
 .blog-list li {
   font-size: 1.2em;
+  text-align: center;
+  
 }
 
 .post-wrap {
-  max-width: 50em;
+  max-width: 40em;
   margin: 0 auto;
+}
+/*** Link Styles ***/
+.post-wrap a:link {
+  color: #ff6732;
+}
+
+.post-wrap a:visited {
+  color: #D47E00;
+}
+
+.post-wrap a:focus,
+.post-wrap a:hover {
+  border-bottom: 2px solid #ff6732;
+}
+
+.post-wrap a:active {
+  color: #ff9d00;
 }
 
 .post-article {
-  margin-top: 4rem;
-  line-height: 1.6;
+  max-width: 45em;
+  margin: 4rem auto 0;
+  line-height: 1.8;
+  padding: 0 1rem;
 }
 
 .post-article p {
@@ -720,8 +748,90 @@ footer > p+p {
   font-size: 0.75em;
   margin: 0.5rem 0 1.5rem;
 }
-/**************======= Desktop styles go here ========***************/
-/***** TAB ****/
+/* Introduces Vertical Rhythm.
+* Whitespace above subhead is larger than whitespace below subhead
+*/
+.post-article p+h2 {
+  margin-top: 2.1rem;
+}
+
+.post-article h2+p {
+  margin-top: 0.7rem;
+}
+
+.post-article p+h3 {
+  margin-top: 2.1rem;
+}
+
+.post-article h3+p {
+  margin-top: 0.7rem;
+}
+
+.post-article p+h4 {
+  margin-top: 2.1rem;
+}
+
+.post-article h4+p {
+  margin-top: 0.7rem;
+}
+/* Introduces Vertical Rhythm.
+* Whitespace above list items.
+*/
+.post-article ul,
+li {
+  margin-top: 1.05rem;
+  padding: 0;
+}
+
+.post-article ul p,
+li p {
+  margin: 0;
+  padding: 0;
+}
+
+.post-article ul {
+  margin-left: 1rem;
+  list-style-position: outside;
+}
+
+.post-article li+li {
+  margin-top: 1.5rem;
+}
+
+.post-article p+p {
+  margin-top: 1rem;
+}
+
+.post-article ul {
+  margin-left: 2.5rem;
+}
+
+.post-article ul+p {
+  margin-top: 0.8rem;
+}
+/* Heading Colors */
+.post-wrap h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #0056A8;
+}
+
+.post-article blockquote {
+  font-style: italic;
+  font-weight: 100;
+  background-color: #FEF8E6;
+  padding: 0.5em 1em;
+}
+/**** Horizontal Rule ****/
+.line {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 250px;
+}
+/**************======= TAB styles ========***************/
 @media screen and (min-width: 40em) {
   /**** Wrapper Div ****/
   .wrap {
@@ -925,109 +1035,6 @@ footer > p+p {
   footer small {
     font-size: 65%;
   }
-}
-/* Blog Page Styles */
-.blog-wrap {
-  max-width: 42em;
-  margin: 0 auto;
-}
-
-.blog-main {
-  margin-top: 3rem;
-}
-
-.blog-list {
-  list-style: none;
-  padding: 1rem;
-}
-
-.blog-list li {
-  font-size: 1.2em;
-}
-
-.post-wrap {
-  max-width: 45em;
-  margin: 0 auto;
-}
-
-.post-article {
-  margin-top: 4rem;
-  line-height: 1.8;
-}
-
-.post-date {
-  font-size: 0.75em;
-  margin: 0.5rem 0 1.5rem;
-}
-/* Introduces Vertical Rhythm.
-* Whitespace above subhead is larger than whitespace below subhead
-*/
-.post-article p+h2 {
-  margin-top: 2.1rem;
-}
-
-.post-article h2+p {
-  margin-top: 0.7rem;
-}
-
-.post-article p+h3 {
-  margin-top: 2.1rem;
-}
-
-.post-article h3+p {
-  margin-top: 0.7rem;
-}
-
-.post-article p+h4 {
-  margin-top: 2.1rem;
-}
-
-.post-article h4+p {
-  margin-top: 0.7rem;
-}
-/* Introduces Vertical Rhythm.
-* Whitespace above list items.
-*/
-.post-article ul,
-li {
-  margin-top: 1.05rem;
-  padding: 0;
-}
-
-.post-article ul p,
-li p {
-  margin: 0;
-  padding: 0;
-}
-
-.post-article ul {
-  margin-left: 1rem;
-  list-style-position: outside;
-}
-
-.post-article li+li {
-  margin-top: 1.5rem;
-}
-
-.post-article p+p {
-  margin-top: 0.7rem;
-}
-
-.post-article ul {
-  margin-left: 2.5rem;
-}
-
-.post-article ul+p {
-  margin-top: 0.8rem;
-}
-/* Heading Colors */
-.post-wrap h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #0056A8;
 }
 /***** DESKTOP ****/
 @media screen and (min-width: 64em) {
