@@ -429,652 +429,609 @@ template {
   display: none;
 }
 /*********============== GLOBAL STYLES ==============*********/
-
-
 /*** Box Sizing ***/
-
 html {
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
-    font-size: 100%;
-    height: 100%;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  font-size: 100%;
+  height: 100%;
 }
 
 *,
-*:before,
-*:after {
-    -moz-box-sizing: inherit;
-         box-sizing: inherit;
+*:after,
+*:before {
+  -moz-box-sizing: inherit;
+       box-sizing: inherit;
 }
-
-
 /******================ FONTS & MARGINS =================******/
-
 body {
-    background-color: #ffffff;
-    font-family: 'Noto Sans', 'Avenir Next', 'SegoeUI', 'Arial', sans-serif;
-    font-size: 14px;
-    font-size: -webkit-calc(14px + 7 * ((100vw - 380px) / 760));
-    font-size: calc(14px + 7 * ((100vw - 380px) / 760));
-    line-height: 1.5;
-    min-height: 100%;
-    position: relative;
-    padding-bottom: 70px;
+  background-color: #ffffff;
+  font-family: 'Noto Sans', 'Avenir Next', 'SegoeUI', 'Arial', sans-serif;
+  font-size: 14px;
+  font-size: -webkit-calc(14px + 7 * ((100vw - 380px) / 760));
+  font-size: calc(14px + 7 * ((100vw - 380px) / 760));
+  line-height: 1.5;
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 70px;
 }
-
 @media screen and (min-width: 1140px) {
-
-    body {
-        font-size: 21px;
-    }
+  body {
+    font-size: 21px;
+  }
 }
-
 @media screen and (max-width: 380px) {
-
-    body {
-        font-size: 14px;
-    }
+  body {
+    font-size: 14px;
+  }
 }
-
-
 /*** Paragraph ***/
-
 p {
-    font-size: 1em;
-    max-width: 36em;
-    color: #3b4348;
-    margin: 0;
-    -webkit-hyphens: auto;
-       -moz-hyphens: auto;
-        -ms-hyphens: auto;
-            hyphens: auto;
+  font-size: 1em;
+  max-width: 36em;
+  color: #3b4348;
+  margin: 0;
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
-
-
 /*** Heading ***/
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: 'Droid Serif', 'Georgia Pro', 'Georgia', 'Times', 'Times New Roman', serif;
-    margin: 0;
-    margin-top: 21px;
-    /* non-scalable fallback for old browsers */
-    margin-top: 1.5rem;
-    /* 21px, will be ignored by old browsers */
+  font-family: 'Droid Serif', 'Georgia Pro', 'Georgia', 'Times', 'Times New Roman', serif;
+  margin: 21px 0 0;
+  /* non-scalable fallback for old browsers */
+  margin-top: 1.5rem;
+  /* 21px, will be ignored by old browsers */
 }
-
-
 /*** Link Styles ***/
-
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:link {
-    color: #ff6732;
+  color: #ff6732;
 }
 
 a:visited {
-    color: #ff6732;
+  color: #ff6732;
 }
 
-a:hover,
-a:focus {
-    color: #94f39f;
+a:focus,
+a:hover {
+  color: #94f39f;
 }
 
 a:active {
-    color: #ff9d00;
+  color: #ff9d00;
 }
-
-
 /***** Images *****/
-
 img {
-    width: auto;
-    max-width: 100%;
-    /* max-width allows image to be responsive. */
-    height: auto;
+  width: auto;
+  max-width: 100%;
+  /* max-width allows image to be responsive. */
+  height: auto;
 }
-
-
 /*** Reset margin & padding to 0. ***/
-
 header,
 main,
 section {
-    margin: 0;
-    margin-top: 24px;
-    margin-top: 1.5rem;
-    padding: 0;
+  margin: 1.5rem 0 0;
+  padding: 0;
 }
-
-
 /**** Wrapper Div ****/
-
 .wrap {
-    width: 95%;
-    max-width: 71.25em;
-    margin: 0 auto;
+  width: 95%;
+  max-width: 71.25em;
+  margin: 0 auto;
 }
 
-ul,
-li {
-    margin: 0;
-    padding: 0;
+li,
+ul {
+  margin: 0;
+  padding: 0;
 }
-
-
 /***** Mobile first styles go here *****/
-
-
 /*********====== HEADER ======**********/
-
 header h1 {
-    padding: 0;
+  padding: 0;
 }
 
 header h1 a {
-    display: block;
-    width: 100%;
-    text-align: center;
+  display: block;
+  width: 100%;
+  text-align: center;
 }
 
 header h1 a:link {
-    color: #000;
+  color: #000;
 }
 
 header h1 a:visited {
-    color: #000;
+  color: #000;
 }
 
-header h1 a:hover,
-a:focus {
-    color: #3b423c;
+a:focus,
+header h1 a:hover {
+  color: #3b423c;
 }
 
 header h1 a:active {
-    color: #0f1314;
+  color: #0f1314;
 }
-
-
 /******===== HEADER - Navigation =====******/
-
 nav {
-    margin-top: 1rem;
-    border: 1px solid #c8bc9d;
+  margin-top: 1rem;
+  border: 1px solid #c8bc9d;
 }
 
 nav a {
+  display: inline-block;
+  font-size: 1.1em;
+  width: 50%;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1em 0;
+  margin: 0;
+  letter-spacing: 0.12em;
+}
+
+nav a:link {
+  color: #ff6732;
+}
+
+nav a:visited {
+  color: #ff6732;
+}
+
+a:focus,
+nav a:hover {
+  background-color: #f9d475;
+  color: #000000;
+}
+/**********============ SECTION - about ===========***********/
+.avatar,
+.bio {
+  margin: 1.5rem 0 0;
+  padding: 0;
+  width: 100%;
+}
+
+.avatar div {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+}
+
+.bio > p {
+  max-width: 36em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bio > *+* {
+  margin-top: 1.1rem;
+}
+
+.highlight {
+  border-bottom: 2px solid blueviolet;
+}
+/**********============ SECTION - social ===========***********/
+.social {
+  display: none;
+  margin-top: 2rem;
+}
+
+.social-m {
+  margin: 1.5rem 0 0;
+  padding: 1em 0;
+  width: 100%;
+  border: 1px solid #c8bc9d;
+}
+
+.social-m a {
+  display: inline-block;
+  margin: 0;
+  padding: 0.1em;
+  width: 25%;
+  text-align: center;
+  border-right: 1px solid #c8bc9d;
+}
+
+.social-m a:last-child {
+  border-right: none;
+}
+
+.social-m a:link {
+  color: #ff6732;
+}
+
+.social-m a:visited {
+  color: #ff6732;
+}
+
+.social-m a:hover,
+a:focus {
+  color: #94f39f;
+}
+
+main {
+  padding-bottom: 1.5rem;
+}
+/************========= FOOTER ==========*************/
+footer {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 70px;
+  background-color: none;
+}
+
+footer > p+p {
+  margin-top: 0.5em;
+}
+
+.half,
+.one,
+.one-fourth,
+.one-third,
+.two-thirds {
+  width: 100%;
+}
+/* Blog Page Styles */
+.blog-main {
+  margin-top: 3rem;
+}
+
+.blog-list {
+  list-style: none;
+  padding: 1rem;
+}
+
+.blog-list li {
+  font-size: 1.2em;
+}
+
+.post-wrap {
+  max-width: 50em;
+  margin: 0 auto;
+}
+
+.post-article {
+  margin-top: 4rem;
+  line-height: 1.6;
+}
+
+.post-article p {
+  max-width: 100%;
+}
+
+.post-date {
+  font-size: 0.75em;
+  margin: 0.5rem 0 1.5rem;
+}
+/**************======= Desktop styles go here ========***************/
+/***** TAB ****/
+@media screen and (min-width: 40em) {
+  /**** Wrapper Div ****/
+  .wrap {
+    width: 95%;
+    max-width: 60em;
+    margin: 0 auto;
+  }
+
+  .one {
+    width: 100%;
+  }
+
+  .half {
+    width: -webkit-calc(100% / 2);
+    width: calc(100% / 2);
+  }
+
+  .one-third {
+    width: -webkit-calc(100% / 3);
+    width: calc(100% / 3);
+  }
+
+  .one-fourth {
+    width: -webkit-calc(100% / 4);
+    width: calc(100% / 4);
+  }
+
+  .two-thirds {
+    width: -webkit-calc(100% / 3 * 2);
+    width: calc(100% / 3 * 2);
+  }
+
+  .column {
+    float: left;
+  }
+  /* CLEARFIX */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /*********** Header **********/
+  header {
+    margin: 0;
+    padding: 1rem 0;
+    border-bottom: 2px solid #c8bc9d;
+  }
+
+  header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    height: 40px;
+  }
+
+  header h1 a {
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  header h1 a:link {
+    color: #000;
+  }
+
+  header h1 a:visited {
+    color: #000;
+  }
+
+  a:focus,
+  header h1 a:hover {
+    color: #3b423c;
+  }
+
+  header h1 a:active {
+    color: #0f1314;
+  }
+  /******===== HEADER - Navigation =====******/
+  nav {
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+  }
+
+  .nav {
+    max-width: 18.75em;
+    margin: 0 auto;
+  }
+
+  nav a {
     display: inline-block;
     font-size: 1.1em;
     width: 50%;
     text-transform: uppercase;
     text-align: center;
-    padding: 1em 0;
+    padding: 0;
     margin: 0;
     letter-spacing: 0.12em;
-}
+  }
 
-nav a:link {
+  nav a:link {
     color: #ff6732;
-}
+  }
 
-nav a:visited {
+  nav a:visited {
     color: #ff6732;
-}
+  }
 
-nav a:hover,
-a:focus {
-    background-color: #f9d475;
-    color: #000000;
-}
-
-
-/**********============ SECTION - about ===========***********/
-
-.avatar,
-.bio {
+  a:focus,
+  nav a:hover {
+    background-color: #fff;
+    color: #94f39f;
+  }
+  /******* MAIN ********/
+  main {
+    margin-top: 5rem;
+  }
+  /**********============ SECTION - about ===========***********/
+  .avatar,
+  .bio {
     margin: 0;
-    margin-top: 24px;
-    margin-top: 1.5rem;
     padding: 0;
     width: 100%;
-}
+  }
 
-.avatar div {
+  .bio {
+    margin-top: 24px;
+    margin-top: 2rem;
+  }
+
+  .avatar div {
     width: 130px;
     height: 130px;
     margin: 0 auto;
-}
+  }
 
-.bio>p {
+  .bio > p {
     max-width: 36em;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-}
+  }
 
-.bio>*+* {
+  .bio > *+* {
     margin-top: 1.1rem;
-}
+  }
 
-.highlight {
+  .highlight {
     border-bottom: 2px solid blueviolet;
-}
-
-
-/**********============ SECTION - social ===========***********/
-
-.social {
+  }
+  /**********============ SECTION - social ===========***********/
+  .social-m {
     display: none;
-    margin-top: 2rem;
-}
+  }
 
-.social-m {
-    margin: 1.5rem 0 0;
+  main .wrap > section:nth-child(2n) {
+    margin-top: 3rem;
+  }
+
+  .social {
+    display: block;
     padding: 1em 0;
-    width: 100%;
-    border: 1px solid #c8bc9d;
-}
+    width: 55%;
+    margin: 0 auto;
+  }
 
-.social-m a {
+  .social a {
     display: inline-block;
     margin: 0;
-    padding: .1em;
+    padding: 0.1em;
     width: 25%;
     text-align: center;
-    border-right: 1px solid #c8bc9d;
-}
+  }
 
-.social-m a:last-child {
+  .social a:last-child {
     border-right: none;
-}
+  }
 
-.social-m a:link {
+  .social a:link {
     color: #ff6732;
-}
+  }
 
-.social-m a:visited {
+  .social a:visited {
     color: #ff6732;
-}
+  }
 
-.social-m a:hover,
-a:focus {
+  .social a:hover,
+  a:focus {
     color: #94f39f;
-}
-
-main {
-    padding-bottom: 1.5rem;
-}
-
-
-/************========= FOOTER ==========*************/
-
-footer {
-    margin: 0;
-    padding: 0;
+  }
+  /************========= FOOTER ==========*************/
+  footer p {
     text-align: center;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 70px;
-    background-color: none;
-}
-
-footer>p+p {
-    margin-top: .5em;
-}
-
-.one,
-.one-third,
-.two-thirds,
-.one-fourth,
-.half {
-    width: 100%;
-}
-
-
-/* Blog Page Styles */
-
-.blog-main {
-    margin-top: 3rem;
-}
-
-.blog-list {
-    list-style: none;
-    padding: 1rem;
-}
-
-.blog-list li {
-    font-size: 1.2em;
-}
-
-.post-wrap {
-    max-width: 50em;
     margin: 0 auto;
+  }
+
+  footer small {
+    font-size: 65%;
+  }
 }
-
-.post-article {
-    margin-top: 4rem;
-    line-height: 1.6;
-}
-
-.post-article p {
-    max-width: 100%;
-}
-
-.post-date {
-    font-size: .75em;
-    margin: .5rem 0 1.5rem;
-}
-
-
-/**************======= Desktop styles go here ========***************/
-
-
-/***** TAB ****/
-
-@media screen and (min-width: 40em) {
-    /**** Wrapper Div ****/
-    .wrap {
-        width: 95%;
-        max-width: 60em;
-        margin: 0 auto;
-    }
-    .one {
-        width: 100%;
-    }
-    .half {
-        width: -webkit-calc(100% / 2);
-        width: calc(100% / 2);
-    }
-    .one-third {
-        width: -webkit-calc(100% / 3);
-        width: calc(100% / 3);
-    }
-    .one-fourth {
-        width: -webkit-calc(100% / 4);
-        width: calc(100% / 4);
-    }
-    .two-thirds {
-        width: -webkit-calc(100% / 3 * 2);
-        width: calc(100% / 3 * 2);
-    }
-    .column {
-        float: left;
-    }
-    /* CLEARFIX */
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-    /*********** Header **********/
-    header {
-        margin: 0;
-        padding: 1rem 0;
-        border-bottom: 2px solid #c8bc9d;
-    }
-    header h1 {
-        margin: 0;
-        padding: 0;
-        font-size: 2em;
-        height: 40px;
-    }
-    header h1 a {
-        display: block;
-        width: 100%;
-        height: 40px;
-        line-height: 40px;
-        text-align: center;
-    }
-    header h1 a:link {
-        color: #000;
-    }
-    header h1 a:visited {
-        color: #000;
-    }
-    header h1 a:hover,
-    a:focus {
-        color: #3b423c;
-    }
-    header h1 a:active {
-        color: #0f1314;
-    }
-    /******===== HEADER - Navigation =====******/
-    nav {
-        margin: 0;
-        padding: 0;
-        height: 40px;
-        line-height: 40px;
-        border: none;
-    }
-    .nav {
-        max-width: 18.75em;
-        margin: 0 auto;
-    }
-    nav a {
-        display: inline-block;
-        font-size: 1.1em;
-        width: 50%;
-        text-transform: uppercase;
-        text-align: center;
-        padding: 0;
-        margin: 0;
-        letter-spacing: 0.12em;
-    }
-    nav a:link {
-        color: #ff6732;
-    }
-    nav a:visited {
-        color: #ff6732;
-    }
-    nav a:hover,
-    a:focus {
-        background-color: #fff;
-        color: #94f39f;
-    }
-    /******* MAIN ********/
-    main {
-        margin-top: 5rem;
-    }
-    /**********============ SECTION - about ===========***********/
-    .avatar,
-    .bio {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    }
-    .bio {
-        margin-top: 24px;
-        margin-top: 2rem;
-    }
-    .avatar div {
-        width: 130px;
-        height: 130px;
-        margin: 0 auto;
-    }
-    .bio>p {
-        max-width: 36em;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .bio>*+* {
-        margin-top: 1.1rem;
-    }
-    .highlight {
-        border-bottom: 2px solid blueviolet;
-    }
-    /**********============ SECTION - social ===========***********/
-    .social-m {
-        display: none;
-    }
-    main .wrap>section:nth-child(2n) {
-        margin-top: 3rem;
-    }
-    .social {
-        display: block;
-        padding: 1em 0;
-        width: 55%;
-        margin: 0 auto;
-    }
-    .social a {
-        display: inline-block;
-        margin: 0;
-        padding: .1em;
-        width: 25%;
-        text-align: center;
-    }
-    .social a:last-child {
-        border-right: none;
-    }
-    .social a:link {
-        color: #ff6732;
-    }
-    .social a:visited {
-        color: #ff6732;
-    }
-    .social a:hover,
-    a:focus {
-        color: #94f39f;
-    }
-    /************========= FOOTER ==========*************/
-    footer p {
-        text-align: center;
-        margin: 0 auto;
-    }
-    footer small {
-        font-size: 65%;
-    }
-}
-
-
 /* Blog Page Styles */
-
 .blog-wrap {
-    max-width: 42em;
-    margin: 0 auto;
+  max-width: 42em;
+  margin: 0 auto;
 }
 
 .blog-main {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 .blog-list {
-    list-style: none;
-    padding: 1rem;
+  list-style: none;
+  padding: 1rem;
 }
 
 .blog-list li {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 .post-wrap {
-    max-width: 45em;
-    margin: 0 auto;
+  max-width: 45em;
+  margin: 0 auto;
 }
 
 .post-article {
-    margin-top: 4rem;
-    line-height: 1.6;
+  margin-top: 4rem;
+  line-height: 1.8;
 }
 
 .post-date {
-    font-size: .75em;
-    margin: .5rem 0 1.5rem;
+  font-size: 0.75em;
+  margin: 0.5rem 0 1.5rem;
 }
-
-
 /* Introduces Vertical Rhythm.
 * Whitespace above subhead is larger than whitespace below subhead
 */
-
 .post-article p+h2 {
-    margin-top: 2.1rem;
+  margin-top: 2.1rem;
 }
 
 .post-article h2+p {
-    margin-top: 0.7rem;
+  margin-top: 0.7rem;
 }
 
 .post-article p+h3 {
-    margin-top: 2.1rem;
+  margin-top: 2.1rem;
 }
 
 .post-article h3+p {
-    margin-top: 0.7rem;
+  margin-top: 0.7rem;
 }
 
 .post-article p+h4 {
-    margin-top: 2.1rem;
+  margin-top: 2.1rem;
 }
 
 .post-article h4+p {
-    margin-top: 0.7rem;
+  margin-top: 0.7rem;
 }
-
-
 /* Introduces Vertical Rhythm.
 * Whitespace above list items.
 */
-
 .post-article ul,
 li {
-    margin-top: 1.05rem;
-    padding: 0;
+  margin-top: 1.05rem;
+  padding: 0;
 }
 
 .post-article ul p,
 li p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .post-article ul {
-    margin-left: 1rem;
-    list-style-position: outside;
+  margin-left: 1rem;
+  list-style-position: outside;
 }
 
 .post-article li+li {
-    margin-top: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .post-article p+p {
-    margin-top: 0.7rem;
+  margin-top: 0.7rem;
 }
 
 .post-article ul {
-    margin-left: 2.5rem;
+  margin-left: 2.5rem;
 }
 
 .post-article ul+p {
-    margin-top: 0.8rem;
+  margin-top: 0.8rem;
 }
-
-
 /* Heading Colors */
-
 .post-wrap h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    color: #0056A8;
+  color: #0056A8;
 }
-
-
 /***** DESKTOP ****/
-
 @media screen and (min-width: 64em) {
-    .social {
-        width: 40%;
-    }
+  .social {
+    width: 40%;
+  }
 }
