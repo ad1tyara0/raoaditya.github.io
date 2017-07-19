@@ -1,10 +1,10 @@
 ---
 layout: posts
 title: "Guide to become a Front-End Developer using Free resources."
-date: 2017-06-26
+date: 2017-07-19
 ---
 
-[Tim Berners-Lee][53] wrote a proposal in 1989 for a system called the World Wide Web. He also created [HTML ( Hypertext Markup Language )][54]  in 1990, for the purpose of formatting scientific documents. HTML is a markup language that  gives structure and meaning to documents.
+[Tim Berners-Lee][53] wrote a proposal in 1989 for a system called the World Wide Web. He also created [HTML (Hypertext Markup Language)][54]  in 1990, for the purpose of formatting scientific documents. HTML is a markup language that  gives structure and meaning to documents.
 
 These documents were to be viewed on a [browser-editor][55] also created by Tim Berners-Lee. This was the first browser that people will recognise today. Although it had a GUI , it did not display images embedded in the text, rather displayed them in a separate window. This browser was named _**WorldWideWeb**_ and later renamed _**Nexus**_ to avoid confusion between the World Wide Web and the web browser.
 
@@ -17,7 +17,7 @@ On August 23rd, 1995, **Microsoft** released their Windows 95 operating system, 
 
 As Internet became more popular and accessible around the world, developers and users became bored of the monotonous structure and style of the webpages.
 Variations in web browser implementations made consistent site appearance difficult, and users had less control over how web content was displayed. Appearance or presentation of the webpage became important. Developers started using HTML to provide ‘style’ to the webpages at the cost of more complicated code. HTML began to loose it's purpose of providing structure to the content. Now it was also used for presentation.
-In response [CSS ( Cascading Style Sheets )][63]  was developed to provide style sheets for the web. CSS was first proposed in 1994 and adopted in 1996 by Internet Explorer and Netscape Navigator.
+In response [CSS (Cascading Style Sheets)][63]  was developed to provide style sheets for the web. CSS was first proposed in 1994 and adopted in 1996 by Internet Explorer and Netscape Navigator.
 
 Netscape’s [Brendan Eich][64] created [Javascript][65] programming language in ten days, as it was to be shipped with the latest beta version of Navigator in 1995. In March 1996, Netscape Navigator 2.0 was released, featuring support for JavaScript.
 Javascript was created for client side form validation which would remove the need of server side processing and reduce the wait time for people on slow connections. JavaScript adds behaviour to the web page where the web page is capable of responding to actions by your visitors without needing to load a new web page in order to process their request. Javascript was introduced as **JScript** in Internet Explorer by Microsoft.

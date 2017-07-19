@@ -497,11 +497,9 @@ a {
 a:link {
   color: #ff6732;
 }
-
 a:visited {
   color: #ff6732;
 }
-
 a:focus,
 a:hover {
   color: #FFBA5B;
@@ -708,7 +706,6 @@ footer > p+p {
 .blog-list li {
   font-size: 1.2em;
   text-align: center;
-  
 }
 
 .post-wrap {
@@ -721,7 +718,7 @@ footer > p+p {
 }
 
 .post-wrap a:visited {
-  color: #D47E00;
+  color: #ff6732;
 }
 
 .post-wrap a:focus,
