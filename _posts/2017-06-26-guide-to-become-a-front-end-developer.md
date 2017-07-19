@@ -98,86 +98,86 @@ Jump to whatever section you want :
 
 The following websites may prove useful to better understand certain concepts that are usually poorly understood.
 
--   [HTML Reference][14]
+-   [HTML Reference][14]  
     _It features all elements and attributes._
 
--   [<head> Cheat Sheet][15]
+-   [<head> Cheat Sheet][15]  
     _A list of everything that could go in the <head> of your document._
 
--   [HTML5 Video Events and API][16]
+-   [HTML5 Video Events and API][16]  
     _This page demonstrates the new HTML5 video element, its media API, and the media events.._
 
 ### CSS (Reference)
 
--   [CSS Reference][17]
+-   [CSS Reference][17]  
     _It features the most popular properties, and explains them with illustrated and animated examples._
 
--   [AtoZ CSS][18]
+-   [AtoZ CSS][18]  
     _Screencast teaching popular CSS properties from AtoZ._
 
--   [CSS Almanac][19]
+-   [CSS Almanac][19]  
     _A reference guide to the many features of CSS._
 
--   [Mastering the :nth-child][20]
+-   [Mastering the :nth-child][20]  
     _Master the :nth-child property._
 
--   [How well do you know CSS display?][21]
+-   [How well do you know CSS display?][21]  
     _Learn everything about CSS display property._
 
--   [Learn CSS Layout][22]
+-   [Learn CSS Layout][22]  
     _Fundamentals of CSS Layouts._
 
--   [Learn CSS Positioning in Ten Steps][23]
+-   [Learn CSS Positioning in Ten Steps][23]  
     _This tutorial examines the different layout properties available in CSS._
 
--   [Centering in CSS : A Complete Guide][24]
+-   [Centering in CSS : A Complete Guide][24]  
     _Different ways for centering things in CSS._
 
--   [A Complete Guide to Flexbox][25]
+-   [A Complete Guide to Flexbox][25]  
     _One stop guide to learn Flexbox._
 
--   [A Complete Guide to Grid][26]
+-   [A Complete Guide to Grid][26]  
     _Learn CSS Grid Layout._
 
 <hr class="line" />
 
 ### Javascript
 
-**Javascript** is a programming language used to add functionality to your web pages and make them more dynamic. JavaScript adds behaviour to the web page where the web page is capable of responding to actions by your visitors without needing to load a new web page in order to process their request.
+**Javascript** is a programming language used to add functionality to your web pages and make them more dynamic. It adds behaviour to the web page where the web page is capable of responding to actions by your visitors without needing to load a new web page in order to process their request.
 JavaScript isn’t just for browsers anymore. The language is being used on the server thanks to Node.js, on desktop devices and mobiles through platforms such as Electron and Cordova.
 
 #### Websites
 
--   [The Modern JavaScript Tutorial][27]
+-   [The Modern JavaScript Tutorial][27]  
     _From the basics to advanced topics with simple, but detailed explanations._
 
--   [JavaScript - MDN][28]
+-   [JavaScript - MDN][28]  
     _Everything about Javascript._
 
--   [Eloquent JavaScript][29]
+-   [Eloquent JavaScript][29]  
     _A very popular book on Javascript by Marijn Haverbeke._
 
--   [Exploring JS : JavaScript books for programmers][30]
+-   [Exploring JS : JavaScript books for programmers][30]  
     _Collection of books authored by Dr. Axel Rauschmayer._
 
--   [You Don't Know JS][31]
+-   [You Don't Know JS][31]  
     _This is a series of books diving deep into the core mechanisms of the JavaScript language, by Kyle Simpson._
 
--   [Understanding ECMAScript 6][32]
+-   [Understanding ECMAScript 6][32]  
     _This book teaches the latest javascript standard. Authored by Nicholas C. Zakas._
 
 #### Video Courses
 
--   [Javascript Foundations][33]
+-   [Javascript Foundations][33]  
     _JavaScript Foundations will teach you the fundamentals of programming with JavaScript._
 
--   [Practical JavaScript][34]
+-   [Practical JavaScript][34]  
     _Learn the JavaScript you need for professional web development._
 
--   [ES2015 Crash Course][35]
+-   [ES2015 Crash Course][35]  
     _A crash course on the latest and greatest that the language has to offer._
 
--   [Javascript 30][36]
+-   [Javascript 30][36]  
     _Build 30 things in 30 days with 30 tutorials._
 
 <hr class="line" />
@@ -201,10 +201,10 @@ There is also what is called the **Developer Edition** of popular browsers, that
 
 Note: There is also **Safari** and **Microsoft Edge** that are available for MacOS and Microsoft Windows respectively.
 
--   [Chrome Dev Tools][42]
+-   [Chrome Dev Tools][42]  
     _Explore and Master Chrome DevTools by **Code School**._
 
--   [Firefox Dev Tools][43]
+-   [Firefox Dev Tools][43]  
     _Scroll down to see tutorial videos._
 
 Note: Dev Tools work mostly same on every browser. If you are using browser other than Chrome or Firefox than I suggest that you learn dev tools using Chrome / Firefox.
@@ -216,10 +216,10 @@ Mastering your text-editor will boost your productivity and reduce your chances 
 
 Below is a list of popular, free text-editors used for web development.
 
--   [Atom][48]
+-   [Atom][48]  
     _Master atom editor using [this tutorial][49]._
 
--   [Visual Studio Code][50]
+-   [Visual Studio Code][50]  
     _Master VSCode editor using [this tutorial][51]._
 
 #### Version Control
@@ -235,13 +235,13 @@ There are many VCS in use today. The most popular is [Git][66] which was created
 
 Use the links below to learn Git & Github.
 
--   [Pro Git][45]
+-   [Pro Git][45]  
     _Only book you'll need to learn git._
 
--   [Git and GitHub for Poets][46]
+-   [Git and GitHub for Poets][46]  
     _Excellent video series that teaches you how to use Github and Git._
 
--   [Try Git][47]
+-   [Try Git][47]  
     _15 minutes to get up to speed with git.(Well..., at least the basics.)_
 
 <hr class="line" />
@@ -251,7 +251,7 @@ Meanwhile, these are some more guides/roadmaps that will surely help you. Do che
 
 1.  [Watch this if you want to be a Web Developer.][2]
 2.  [Web Developer Roadmap.][3]
-3.  [Front-End Developer Handbook 2017.][4]
+3.  [Front-End Developer Handbook 2017.][4]  
     ( You can read this book online for free or download PDF, ePub or Mobi.)
 
 [1]: https://en.wikipedia.org/wiki/Front-end_web_development "Front-end_web_development"

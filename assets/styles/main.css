@@ -497,9 +497,11 @@ a {
 a:link {
   color: #ff6732;
 }
+
 a:visited {
   color: #ff6732;
 }
+
 a:focus,
 a:hover {
   color: #FFBA5B;
