@@ -445,7 +445,7 @@ html {
 }
 /******================ FONTS & MARGINS =================******/
 body {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   font-family: 'Source Sans Pro', 'Avenir Next', 'SegoeUI', 'Arial', sans-serif;
   font-size: 14px;
   font-size: -webkit-calc(14px + 7 * ((100vw - 380px) / 760));
@@ -617,7 +617,7 @@ nav a:hover {
   margin-right: auto;
 }
 
-.bio > *+* {
+.bio > * + * {
   margin-top: 1.1rem;
 }
 
@@ -680,7 +680,7 @@ footer {
   background-color: none;
 }
 
-footer > p+p {
+footer > p + p {
   margin-top: 0.5em;
 }
 
@@ -753,27 +753,27 @@ footer > p+p {
 /* Introduces Vertical Rhythm.
 * Whitespace above subhead is larger than whitespace below subhead
 */
-.post-article p+h2 {
+.post-article p + h2 {
   margin-top: 2.1rem;
 }
 
-.post-article h2+p {
+.post-article h2 + p {
   margin-top: 0.7rem;
 }
 
-.post-article p+h3 {
+.post-article p + h3 {
   margin-top: 2.1rem;
 }
 
-.post-article h3+p {
+.post-article h3 + p {
   margin-top: 0.7rem;
 }
 
-.post-article p+h4 {
+.post-article p + h4 {
   margin-top: 2.1rem;
 }
 
-.post-article h4+p {
+.post-article h4 + p {
   margin-top: 0.7rem;
 }
 /* Introduces Vertical Rhythm.
@@ -796,11 +796,11 @@ li p {
   list-style-position: outside;
 }
 
-.post-article li+li {
+.post-article li + li {
   margin-top: 1.5rem;
 }
 
-.post-article p+p {
+.post-article p + p {
   margin-top: 1rem;
 }
 
@@ -808,7 +808,7 @@ li p {
   margin-left: 2.5rem;
 }
 
-.post-article ul+p {
+.post-article ul + p {
   margin-top: 0.8rem;
 }
 /* Heading Colors */
@@ -818,13 +818,13 @@ h3,
 h4,
 h5,
 h6 {
-  color: #0056A8;
+  color: #0056a8;
 }
 
 .post-article blockquote {
   font-style: italic;
   font-weight: 100;
-  background-color: #CFE0E3;
+  background-color: #cfe0e3;
   padding: 0.5em 1em;
 }
 /**** Horizontal Rule ****/
@@ -833,7 +833,7 @@ h6 {
   margin-bottom: 40px;
   width: 250px;
 }
-  /**** Disqus styles ****/
+/**** Disqus styles ****/
 .disqus {
   margin-top: 100px;
   max-width: 45em;
@@ -989,26 +989,24 @@ h6 {
     margin-right: auto;
   }
 
-  .bio > *+* {
+  .bio > * + * {
     margin-top: 1.1rem;
   }
 
   .highlight {
     border-bottom: 2px solid blueviolet;
   }
- 
 
   /*============ SECTION - social ===========*/
   .social-m {
-  margin: 2rem 0 0;
-  padding: 1em 0;
-  max-width: 22em;
-  margin: 0 auto;
-  border: none;
-}
+    margin: 2rem 0 0;
+    padding: 1em 0;
+    max-width: 22em;
+    margin: 0 auto;
+    border: none;
+  }
 
-
-/************========= FOOTER ==========*************/
+  /************========= FOOTER ==========*************/
   footer p {
     text-align: center;
     margin: 0 auto;
