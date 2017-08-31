@@ -450,7 +450,7 @@ body {
   font-size: 14px;
   font-size: -webkit-calc(14px + 7 * ((100vw - 380px) / 760));
   font-size: calc(14px + 7 * ((100vw - 380px) / 760));
-  line-height: 1.5;
+  line-height: 1.6;
   min-height: 100%;
   position: relative;
   padding-bottom: 70px;
@@ -469,7 +469,7 @@ body {
 p {
   font-size: 1em;
   max-width: 36em;
-  color: #3b4348;
+  color: #111111;
   margin: 0;
   -webkit-hyphens: auto;
      -moz-hyphens: auto;
@@ -818,15 +818,17 @@ h3,
 h4,
 h5,
 h6 {
-  color: #0056a8;
+  color: #079FC0; /*#0056a8;*/
 }
 
+/* Blockquote */
 .post-article blockquote {
   font-style: italic;
-  font-weight: 100;
-  background-color: #cfe0e3;
-  padding: 0.5em 1em;
+  margin: 1.5em 0;
+  border-left: 2px solid #ff6732;
+  padding: .75em 0 0 1.5em;
 }
+
 /**** Horizontal Rule ****/
 .line {
   margin-top: 40px;
@@ -1021,5 +1023,16 @@ h6 {
 @media screen and (min-width: 64em) {
   .social {
     width: 40%;
+  }
+
+  /* Blockquote */
+  .post-article blockquote {
+    font-style: italic;
+    margin: 1.5em 0;
+    border-left: 5px solid #ff6732;
+    padding: .75em .5em 0 1.5em;
+  }
+  .post-article blockquote p:nth-child(2) {
+    text-align: right;
   }
 }

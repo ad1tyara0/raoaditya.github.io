@@ -87,7 +87,7 @@ Jump to whatever section you want :
 
 -   [Learn web development - Mozilla Developer Network][9]
 
-#### Videos Courses
+#### Video Courses
 
 -   [HTML Tutorial for Beginners][11]
 
