@@ -71,7 +71,7 @@ Let's create a demo project to install and use ESLint.
 
 Open the `.eslintrc` file and you'll see the following JSON object. ( if you choose to save it as `.json` file as I did.)
 
-{% highlight json %}
+```json
 {
     "env": {
         "browser": true,
@@ -100,7 +100,7 @@ Open the `.eslintrc` file and you'll see the following JSON object. ( if you cho
         ]
     }
 }
-{% endhighlight %}
+```
 
 ESLint will set up `.eslintrc` file with some initial settings depending on the options you choose. We can see few properties and their values here. We can change, remove, or override these values.
 
