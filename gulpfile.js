@@ -31,7 +31,7 @@ var supported = [
     'android 4'
 ];
 // CSS Files for build:styles Task.
-var cssFiles = [paths.cssFiles + '/normalize.css', paths.cssFiles + '/*.css'];
+var cssFiles = [paths.cssFiles + '/normalize.css', paths.cssFiles + '/syntax.css', paths.cssFiles + '/style.css'];
 /*
 // Rename function for rename task.
 var renameFunction = function (path) {

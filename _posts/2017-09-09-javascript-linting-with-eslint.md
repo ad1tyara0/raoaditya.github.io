@@ -172,7 +172,7 @@ We are using ESLint as command line tool, but ESLint can be integrated with your
 
 [ESLint][1]
 
------
+<hr class="line" />
 
 [1]: https://eslint.org/
 [2]: https://en.wikipedia.org/wiki/Lint_(software)

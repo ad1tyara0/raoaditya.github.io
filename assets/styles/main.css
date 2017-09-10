@@ -82,7 +82,7 @@ hr {
 
 pre {
   font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-size: 1rem; /* 2 */
 }
 
 /* Text-level semantics
@@ -132,7 +132,6 @@ strong {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 
-code,
 kbd,
 samp {
   font-family: monospace, monospace; /* 1 */
@@ -428,6 +427,84 @@ template {
 [hidden] {
   display: none;
 }
+.highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight, .highlight .w {
+  color: #303030;
+}
+.highlight .err {
+  color: #151515;
+  background-color: #ac4142;
+}
+.highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
+  color: #505050;
+}
+.highlight .cp {
+  color: #f4bf75;
+}
+.highlight .nt {
+  color: #f4bf75;
+}
+.highlight .o, .highlight .ow {
+  color: #d0d0d0;
+}
+.highlight .p, .highlight .pi {
+  color: #d0d0d0;
+}
+.highlight .gi {
+  color: #90a959;
+}
+.highlight .gd {
+  color: #ac4142;
+}
+.highlight .gh {
+  color: #6a9fb5;
+  background-color: #151515;
+  font-weight: bold;
+}
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+  color: #aa759f;
+}
+.highlight .kc {
+  color: #d28445;
+}
+.highlight .kt {
+  color: #d28445;
+}
+.highlight .kd {
+  color: #d28445;
+}
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+  color: #90a959;
+}
+.highlight .sr {
+  color: #75b5aa;
+}
+.highlight .si {
+  color: #8f5536;
+}
+.highlight .se {
+  color: #8f5536;
+}
+.highlight .nn {
+  color: #f4bf75;
+}
+.highlight .nc {
+  color: #f4bf75;
+}
+.highlight .no {
+  color: #f4bf75;
+}
+.highlight .na {
+  color: #6a9fb5;
+}
+.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx {
+  color: #90a959;
+}
+.highlight .ss {
+  color: #90a959;
+}
+
 /*********============== GLOBAL STYLES ==============*********/
 /*** Box Sizing ***/
 html {
@@ -828,24 +905,29 @@ h6 {
 
 /* code */
 .post-article .highlighter-rouge {
+  max-width: 100%;
   font-family: monospace;
-  font-size: 1rem;
-  padding: .2em .5em;
+  font-size: .75rem;
+  padding: .1em .2em;
   background-color: #fafafa;
   color: rgb(0, 0, 0);
-  border: .5px solid #fafafa;
+  border: .2px solid #fafafa;
   box-shadow: 0px 1px 2px #888888;
 }
 
 .post-article div[class^="language-"] {
   background-color: #ffffff;
   box-shadow: none;
+  max-width: 100%;
+  
 }
 
 /* Pre */
 .post-article pre.highlight {
-  padding: 1rem;
+  max-width: 100%;
+  padding: .25rem;
   border-radius: 5px;
+  overflow-x: scroll;
 }
 
 /**** Horizontal Rule ****/
@@ -1037,7 +1119,7 @@ h6 {
   }
 }
 
-/************========= DESKTOP ************=========/
+/************========= DESKTOP =========************/
 @media screen and (min-width: 64em) {
   .social {
     width: 40%;
@@ -1054,211 +1136,66 @@ h6 {
     text-align: right;
   }
 
-.highlight table td { padding: 5px; }
-.highlight table pre { margin: 0; }
-.highlight .c, .highlight .cd {
-  color: #5e5d83;
-  font-style: italic;
-}
-.highlight .cm {
-  color: #5e5d83;
-  font-style: italic;
-}
-.highlight .c1 {
-  color: #5e5d83;
-  font-style: italic;
-}
-.highlight .cp {
-  color: #465457;
-  font-weight: bold;
-}
-.highlight .cs {
-  color: #465457;
-  font-weight: bold;
-  font-style: italic;
-}
-.highlight .err {
-  color: #f8f8f2;
-  background-color: #403d3d;
-}
-.highlight .gi {
-  color: #a6e22e;
-}
-.highlight .gd {
-  color: #f92672;
-}
-.highlight .ge {
-  color: #1b1d1e;
-  font-style: italic;
-}
-.highlight .gr {
-  color: #f92672;
-}
-.highlight .gt {
-  color: #f92672;
-}
-.highlight .gh {
-  color: #403d3d;
-}
-.highlight .go {
-  color: #403d3d;
-}
-.highlight .gp {
-  color: #66d9ef;
-}
-.highlight .gs {
-  font-weight: bold;
-}
-.highlight .gu {
-  color: #465457;
-}
-.highlight .k, .highlight .kv {
-  color: #66d9ef;
-  font-weight: bold;
-}
-.highlight .kc {
-  color: #66d9ef;
-  font-weight: bold;
-}
-.highlight .kd {
-  color: #66d9ef;
-  font-weight: bold;
-}
-.highlight .kp {
-  color: #66d9ef;
-  font-weight: bold;
-}
-.highlight .kr {
-  color: #66d9ef;
-  font-weight: bold;
-}
-.highlight .kt {
-  color: #66d9ef;
-  font-weight: bold;
-}
-.highlight .kn {
-  color: #f92672;
-  font-weight: bold;
-}
-.highlight .ow {
-  color: #f92672;
-  font-weight: bold;
-}
-.highlight .o {
-  color: #f92672;
-  font-weight: bold;
-}
-.highlight .mf {
-  color: #af87ff;
-}
-.highlight .mh {
-  color: #af87ff;
-}
-.highlight .il {
-  color: #af87ff;
-}
-.highlight .mi {
-  color: #af87ff;
-}
-.highlight .mo {
-  color: #af87ff;
-}
-.highlight .m, .highlight .mb, .highlight .mx {
-  color: #af87ff;
-}
-.highlight .se {
-  color: #af87ff;
-}
-.highlight .sb {
-  color: #d7d787;
-}
-.highlight .sc {
-  color: #d7d787;
-}
-.highlight .sd {
-  color: #d7d787;
-}
-.highlight .s2 {
-  color: #d7d787;
-}
-.highlight .sh {
-  color: #d7d787;
-}
-.highlight .si {
-  color: #d7d787;
-}
-.highlight .sx {
-  color: #d7d787;
-}
-.highlight .sr {
-  color: #d7d787;
-}
-.highlight .s1 {
-  color: #d7d787;
-}
-.highlight .ss {
-  color: #d7d787;
-}
-.highlight .s {
-  color: #d7d787;
-}
-.highlight .na {
-  color: #a6e22e;
-}
-.highlight .nc {
-  color: #a6e22e;
-  font-weight: bold;
-}
-.highlight .nd {
-  color: #a6e22e;
-  font-weight: bold;
-}
-.highlight .ne {
-  color: #a6e22e;
-  font-weight: bold;
-}
-.highlight .nf {
-  color: #a6e22e;
-  font-weight: bold;
-}
-.highlight .no {
-  color: #66d9ef;
-}
-.highlight .bp {
-  color: #f8f8f2;
-}
-.highlight .nb {
-  color: #f8f8f2;
-}
-.highlight .ni {
-  color: #f8f8f2;
-}
-.highlight .nn {
-  color: #f8f8f2;
-}
-.highlight .vc {
-  color: #f8f8f2;
-}
-.highlight .vg {
-  color: #f8f8f2;
-}
-.highlight .vi {
-  color: #f8f8f2;
-}
-.highlight .nv {
-  color: #f8f8f2;
-}
-.highlight .w {
-  color: #f8f8f2;
-}
-.highlight .nl {
-  color: #f8f8f2;
-  font-weight: bold;
-}
-.highlight .nt {
-  color: #f92672;
-}
-.highlight {
-  color: #f8f8f2;
-  background-color: #1b1d1e;
+  /* code */
+
+  code {
+    font-family: monospace;
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #333;
+    /*background-color: #eff0f1;*/
+  }
+
+  .post-article .highlighter-rouge {
+    font-size: 1rem;
+    padding: 0.1em 0.4em;
+    margin: 0 0.2em;
+    background-color: #fafafa;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 1px 2px #888888;
+  }
+
+  .post-article div[class^="language-"] {
+    background-color: #ffffff;
+    box-shadow: none;
+    border: 0;
+    padding: 0;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+
+/* Pre */
+  pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .highlight {
+    box-shadow: inset 0 1px 0 #fff, 1px 1px 0 #fff, 2px 2px 0 #ddd, 3px 3px 0 #fff, 4px 4px 0 #ddd;
+    border-radius: 4px;
+  }
+  /* Following code will remove semicolon highlighting. */
+  .highlight .err {
+    background-color: transparent;
+  }
+
+  .post-article pre.highlight, .post-article .highlight pre {
+    overflow-x: auto;
+  }
+
+  /**** Horizontal Rule ****/
+  .line {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 600px;
+  }
 }
