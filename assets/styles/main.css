@@ -621,9 +621,6 @@ nav a:hover {
   margin-top: 1.1rem;
 }
 
-.highlight {
-  border-bottom: 2px solid blueviolet;
-}
 /**********============ SECTION - social ===========***********/
 .social {
   display: none;
@@ -829,6 +826,28 @@ h6 {
   padding: .75em 0 0 1.5em;
 }
 
+/* code */
+.post-article .highlighter-rouge {
+  font-family: monospace;
+  font-size: 1rem;
+  padding: .2em .5em;
+  background-color: #fafafa;
+  color: rgb(0, 0, 0);
+  border: .5px solid #fafafa;
+  box-shadow: 0px 1px 2px #888888;
+}
+
+.post-article div[class^="language-"] {
+  background-color: #ffffff;
+  box-shadow: none;
+}
+
+/* Pre */
+.post-article pre.highlight {
+  padding: 1rem;
+  border-radius: 5px;
+}
+
 /**** Horizontal Rule ****/
 .line {
   margin-top: 40px;
@@ -841,6 +860,8 @@ h6 {
   max-width: 45em;
   margin: 0 auto;
 }
+
+
 /**************======= TAB styles ========***************/
 @media screen and (min-width: 40em) {
   /**** Wrapper Div ****/
@@ -995,9 +1016,6 @@ h6 {
     margin-top: 1.1rem;
   }
 
-  .highlight {
-    border-bottom: 2px solid blueviolet;
-  }
 
   /*============ SECTION - social ===========*/
   .social-m {
@@ -1019,7 +1037,7 @@ h6 {
   }
 }
 
-/***** DESKTOP ****/
+/************========= DESKTOP ************=========/
 @media screen and (min-width: 64em) {
   .social {
     width: 40%;
@@ -1035,4 +1053,212 @@ h6 {
   .post-article blockquote p:nth-child(2) {
     text-align: right;
   }
+
+.highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .c, .highlight .cd {
+  color: #5e5d83;
+  font-style: italic;
+}
+.highlight .cm {
+  color: #5e5d83;
+  font-style: italic;
+}
+.highlight .c1 {
+  color: #5e5d83;
+  font-style: italic;
+}
+.highlight .cp {
+  color: #465457;
+  font-weight: bold;
+}
+.highlight .cs {
+  color: #465457;
+  font-weight: bold;
+  font-style: italic;
+}
+.highlight .err {
+  color: #f8f8f2;
+  background-color: #403d3d;
+}
+.highlight .gi {
+  color: #a6e22e;
+}
+.highlight .gd {
+  color: #f92672;
+}
+.highlight .ge {
+  color: #1b1d1e;
+  font-style: italic;
+}
+.highlight .gr {
+  color: #f92672;
+}
+.highlight .gt {
+  color: #f92672;
+}
+.highlight .gh {
+  color: #403d3d;
+}
+.highlight .go {
+  color: #403d3d;
+}
+.highlight .gp {
+  color: #66d9ef;
+}
+.highlight .gs {
+  font-weight: bold;
+}
+.highlight .gu {
+  color: #465457;
+}
+.highlight .k, .highlight .kv {
+  color: #66d9ef;
+  font-weight: bold;
+}
+.highlight .kc {
+  color: #66d9ef;
+  font-weight: bold;
+}
+.highlight .kd {
+  color: #66d9ef;
+  font-weight: bold;
+}
+.highlight .kp {
+  color: #66d9ef;
+  font-weight: bold;
+}
+.highlight .kr {
+  color: #66d9ef;
+  font-weight: bold;
+}
+.highlight .kt {
+  color: #66d9ef;
+  font-weight: bold;
+}
+.highlight .kn {
+  color: #f92672;
+  font-weight: bold;
+}
+.highlight .ow {
+  color: #f92672;
+  font-weight: bold;
+}
+.highlight .o {
+  color: #f92672;
+  font-weight: bold;
+}
+.highlight .mf {
+  color: #af87ff;
+}
+.highlight .mh {
+  color: #af87ff;
+}
+.highlight .il {
+  color: #af87ff;
+}
+.highlight .mi {
+  color: #af87ff;
+}
+.highlight .mo {
+  color: #af87ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #af87ff;
+}
+.highlight .se {
+  color: #af87ff;
+}
+.highlight .sb {
+  color: #d7d787;
+}
+.highlight .sc {
+  color: #d7d787;
+}
+.highlight .sd {
+  color: #d7d787;
+}
+.highlight .s2 {
+  color: #d7d787;
+}
+.highlight .sh {
+  color: #d7d787;
+}
+.highlight .si {
+  color: #d7d787;
+}
+.highlight .sx {
+  color: #d7d787;
+}
+.highlight .sr {
+  color: #d7d787;
+}
+.highlight .s1 {
+  color: #d7d787;
+}
+.highlight .ss {
+  color: #d7d787;
+}
+.highlight .s {
+  color: #d7d787;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+  font-weight: bold;
+}
+.highlight .nd {
+  color: #a6e22e;
+  font-weight: bold;
+}
+.highlight .ne {
+  color: #a6e22e;
+  font-weight: bold;
+}
+.highlight .nf {
+  color: #a6e22e;
+  font-weight: bold;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .bp {
+  color: #f8f8f2;
+}
+.highlight .nb {
+  color: #f8f8f2;
+}
+.highlight .ni {
+  color: #f8f8f2;
+}
+.highlight .nn {
+  color: #f8f8f2;
+}
+.highlight .vc {
+  color: #f8f8f2;
+}
+.highlight .vg {
+  color: #f8f8f2;
+}
+.highlight .vi {
+  color: #f8f8f2;
+}
+.highlight .nv {
+  color: #f8f8f2;
+}
+.highlight .w {
+  color: #f8f8f2;
+}
+.highlight .nl {
+  color: #f8f8f2;
+  font-weight: bold;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight {
+  color: #f8f8f2;
+  background-color: #1b1d1e;
 }
