@@ -106,7 +106,14 @@ gulp.task('clean:styles', function(callback) {
 
  gulp.task('build:images', function() {
     gulp.src(paths.imageFilesGlob)
-        .pipe(imagemin())
+        .pipe(imagemin([
+            imagemin.svgo({
+                plugins: [
+                    {removeViewBox: false},
+                    {cleanupIDs: false}
+                ]
+            })
+        ]))
         .pipe(gulp.dest(paths.jekyllImageFiles))
         .pipe(gulp.dest(paths.siteImageFiles))
         .pipe(browserSync.stream());
