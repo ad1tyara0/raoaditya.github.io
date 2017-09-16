@@ -803,8 +803,8 @@ footer > p + p {
 .blog-list li time {
   font-size: 0.6em;
   padding: 2px 5px;
-  background-color: #079FC0;
-  color: white;
+  background-color: #FDDE9F;
+  color: #000;
   margin-right: 1em;
 }
 
@@ -841,12 +841,13 @@ footer > p + p {
   max-width: 100%;
 }
 
-.post-date {
+p.post-date {
   font-size: 0.75em;
-  margin: 0.5rem 0 1.5rem;
-  padding: 2px 5px;
-  background-color: #079FC0;
-  color: white;
+  max-width: 200px;
+  margin: 0.5rem 0 4rem;
+  padding: 0 10px;
+  background-color: #FDDE9F;
+  color: #000;
 }
 /* Introduces Vertical Rhythm.
 * Whitespace above subhead is larger than whitespace below subhead
@@ -917,7 +918,6 @@ h4,
 h5,
 h6 {
   color: #079FC0;
-  /*#0056a8;*/
 }
 /* Blockquote */
 .post-article blockquote {
@@ -989,9 +989,9 @@ code {
 }
 /**** Horizontal Rule ****/
 .line {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  width: 250px;
+  width: 100%;
+  border-top: 4px solid #FDDE9F;
+  margin: 2em 0 4em 0;
 }
 /**** Disqus styles ****/
 .disqus {
@@ -1247,11 +1247,5 @@ code {
   .post-article pre.highlight code {
     overflow-wrap: normal;
     white-space: pre;
-  }
-  /**** Horizontal Rule ****/
-  .line {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    width: 600px;
   }
 }

@@ -7,7 +7,7 @@ comments: true
 
 [Tim Berners-Lee][53] wrote a proposal in 1989 for a system called the World Wide Web. He also created [HTML (Hypertext Markup Language)][54]  in 1990, for the purpose of formatting scientific documents. HTML is a markup language that  gives structure and meaning to documents.
 
-These documents were to be viewed on a [browser-editor][55] also created by Tim Berners-Lee. This was the first browser that people will recognise today. Although it had a GUI , it did not display images embedded in the text, rather displayed them in a separate window. This browser was named _**WorldWideWeb**_ and later renamed _**Nexus**_ to avoid confusion between the World Wide Web and the web browser.
+These documents were to be viewed on a [browser-editor][55] also created by Tim Berners-Lee. This was the first browser that people will recognise today. Although it had a GUI , it did not display images embedded in the text, rather displayed them in a separate window. This browser was named **WorldWideWeb** and later renamed **Nexus** to avoid confusion between the World Wide Web and the web browser.
 
 Then came [Mosaic][56], by [Marc Andreessen][57], in February, 1993. It had a GUI and displayed images inline; embedded in pages alongside text, support for sound, video clips, forms support and bookmarks. Soon after it's release Mosaic became the most popular browser at the time. It was also the first commercial browser.
 
@@ -61,7 +61,7 @@ Not all websites require a back-end. Product pages and portfolio websites don't 
 Stack here is collection of software required for Web development such as an operating system (OS), a programming language, database software and a Web server.
 For some people full stack developer is someone who has mastery over all aspect of web stack. Others might consider a person familiar with entire stack, but specializes in part of technology as full stack developer.
 
-This list provides _**free resources**_ to help you become a _front-end developer_. I’ll include resources for back-end technologies once I dive into it. 😄
+This list provides **free resources** to help you become a front-end developer. I’ll include resources for back-end technologies once I dive into it. 😄
 
 Jump to whatever section you want :
 
@@ -100,47 +100,47 @@ Jump to whatever section you want :
 The following websites may prove useful to better understand certain concepts that are usually poorly understood.
 
 -   [HTML Reference][14]  
-    _It features all elements and attributes._
+    It features all elements and attributes.
 
 -   [<head> Cheat Sheet][15]  
-    _A list of everything that could go in the <head> of your document._
+    A list of everything that could go in the <head> of your document.
 
 -   [HTML5 Video Events and API][16]  
-    _This page demonstrates the new HTML5 video element, its media API, and the media events.._
+    This page demonstrates the new HTML5 video element, its media API, and the media events.
 
 ### CSS (Reference)
 
 -   [CSS Reference][17]  
-    _It features the most popular properties, and explains them with illustrated and animated examples._
+    It features the most popular properties, and explains them with illustrated and animated examples.
 
 -   [AtoZ CSS][18]  
-    _Screencast teaching popular CSS properties from AtoZ._
+    Screencast teaching popular CSS properties from AtoZ.
 
 -   [CSS Almanac][19]  
-    _A reference guide to the many features of CSS._
+    A reference guide to the many features of CSS.
 
 -   [Mastering the :nth-child][20]  
-    _Master the :nth-child property._
+    Master the :nth-child property.
 
 -   [How well do you know CSS display?][21]  
-    _Learn everything about CSS display property._
+    Learn everything about CSS display property.
 
 -   [Learn CSS Layout][22]  
-    _Fundamentals of CSS Layouts._
+    Fundamentals of CSS Layouts.
 
 -   [Learn CSS Positioning in Ten Steps][23]  
-    _This tutorial examines the different layout properties available in CSS._
+    This tutorial examines the different layout properties available in CSS.
 
 -   [Centering in CSS : A Complete Guide][24]  
-    _Different ways for centering things in CSS._
+    Different ways for centering things in CSS.
 
 -   [A Complete Guide to Flexbox][25]  
-    _One stop guide to learn Flexbox._
+    One stop guide to learn Flexbox.
 
 -   [A Complete Guide to Grid][26]  
-    _Learn CSS Grid Layout._
+    Learn CSS Grid Layout.
 
-<hr class="line" />
+<div class="line"></div>
 
 ### Javascript
 
@@ -150,38 +150,38 @@ JavaScript isn’t just for browsers anymore. The language is being used on the 
 #### Websites
 
 -   [The Modern JavaScript Tutorial][27]  
-    _From the basics to advanced topics with simple, but detailed explanations._
+    From the basics to advanced topics with simple, but detailed explanations.
 
 -   [JavaScript - MDN][28]  
-    _Everything about Javascript._
+    Everything about Javascript.
 
 -   [Eloquent JavaScript][29]  
-    _A very popular book on Javascript by Marijn Haverbeke._
+    A very popular book on Javascript by Marijn Haverbeke.
 
 -   [Exploring JS : JavaScript books for programmers][30]  
-    _Collection of books authored by Dr. Axel Rauschmayer._
+    Collection of books authored by Dr. Axel Rauschmayer.
 
 -   [You Don't Know JS][31]  
-    _This is a series of books diving deep into the core mechanisms of the JavaScript language, by Kyle Simpson._
+    This is a series of books diving deep into the core mechanisms of the JavaScript language, by Kyle Simpson.
 
 -   [Understanding ECMAScript 6][32]  
-    _This book teaches the latest javascript standard. Authored by Nicholas C. Zakas._
+    This book teaches the latest javascript standard. Authored by Nicholas C. Zakas.
 
 #### Video Courses
 
 -   [Javascript Foundations][33]  
-    _JavaScript Foundations will teach you the fundamentals of programming with JavaScript._
+    JavaScript Foundations will teach you the fundamentals of programming with JavaScript.
 
 -   [Practical JavaScript][34]  
-    _Learn the JavaScript you need for professional web development._
+    Learn the JavaScript you need for professional web development.
 
 -   [ES2015 Crash Course][35]  
-    _A crash course on the latest and greatest that the language has to offer._
+    A crash course on the latest and greatest that the language has to offer.
 
 -   [Javascript 30][36]  
-    _Build 30 things in 30 days with 30 tutorials._
+    Build 30 things in 30 days with 30 tutorials.
 
-<hr class="line" />
+<div class="line"></div>
 
 ### Related technologies
 
@@ -203,10 +203,10 @@ There is also what is called the **Developer Edition** of popular browsers, that
 Note: There is also **Safari** and **Microsoft Edge** that are available for MacOS and Microsoft Windows respectively.
 
 -   [Chrome Dev Tools][42]  
-    _Explore and Master Chrome DevTools by **Code School**._
+    Explore and Master Chrome DevTools by **Code School**.
 
 -   [Firefox Dev Tools][43]  
-    _Scroll down to see tutorial videos._
+    Scroll down to see tutorial videos.
 
 Note: Dev Tools work mostly same on every browser. If you are using browser other than Chrome or Firefox than I suggest that you learn dev tools using Chrome / Firefox.
 
@@ -218,34 +218,34 @@ Mastering your text-editor will boost your productivity and reduce your chances 
 Below is a list of popular, free text-editors used for web development.
 
 -   [Atom][48]  
-    _Master atom editor using [this tutorial][49]._
+    Master atom editor using [this tutorial][49].
 
 -   [Visual Studio Code][50]  
-    _Master VSCode editor using [this tutorial][51]._
+    Master VSCode editor using [this tutorial][51].
 
 #### Version Control
 
-Nearly every project out there is using a _**Version Control System (VCS)**._
+Nearly every project out there is using a **Version Control System (VCS)**.
 Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later.
 For whatever reasons, if you want to undo the changes you made across the project or, you want to recover the files you accidentally deleted !
 
-😎 _" Have no fear, because **Version Control** is here. "_
+Enter **Version Control** 😎
 
-Lame, but it does rescue you by allowing you to restore your project to a previous state.
+Version Control will rescue you by allowing you to restore your project to a previous state.
 There are many VCS in use today. The most popular is [Git][66] which was created by [Linus Torvalds][44], who created the linux kernel. Part of the reason git became popular as it is today is because of [Github][67]. Github allows you to host your code online and integrates git for version control.
 
 Use the links below to learn Git & Github.
 
 -   [Pro Git][45]  
-    _Only book you'll need to learn git._
+    Only book you'll need to learn git.
 
 -   [Git and GitHub for Poets][46]  
-    _Excellent video series that teaches you how to use Github and Git._
+    Excellent video series that teaches you how to use Github and Git.
 
 -   [Try Git][47]  
-    _15 minutes to get up to speed with git.(Well..., at least the basics.)_
+    15 minutes to get up to speed with git.
 
-<hr class="line" />
+<div class="line"></div>
 
 This is by no means an exhaustive list of front-end technologies and resources. I will update the related technologies section in future.
 Meanwhile, these are some more guides/roadmaps that will surely help you. Do check them out.
