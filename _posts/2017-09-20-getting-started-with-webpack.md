@@ -80,7 +80,7 @@ We want to use these modules, so we **require** all four modules in `bundle.js`.
 But wait! That's not all webpack does. Webpack can help you manage **static assets** like CSS, fonts, images for the front-end. You want to minimize your static assets, compile Saas, gzip your files, want source-maps, webpack has you covered. 
 There are a large number of **loaders** and **plugins** available for webpack that perform a lot of tasks beyond just bundling.
 
-Webpack can be used with other tools like npm scripts, Grunt, Gulp to do solve problems it doesn't. 
+Webpack can be used with other tools like npm scripts, Grunt, Gulp to solve problems it doesn't. 
 
 
 ### Getting started
