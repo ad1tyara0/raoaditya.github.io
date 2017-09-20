@@ -162,7 +162,7 @@ The directory structure should be like so:
 
 Open `learn-webpack` in any browser and check if it's working.
 
-![learn-webpack Screenshot](introtowebpack.png)
+![learn-webpack Screenshot](/assets/images/introtowebpack.png)
 
 We see our CSS and javascript are working. Open `devtools > console` to view `console.log` statement from javascript file.
 
@@ -245,7 +245,7 @@ You can name the config file something other than `webpack.config.js`. In that c
 Check `dist` folder for webpack generated `bundle.js` file. In `index.html` replace `main.js` with `bundle.js` and check if it's working.
 If you open `bundle.js` you will see the Webpack bootstrap code. This code is what makes webpack work with your config. Scroll to the end to see our `console.log('Hello console.')` line from `main.js`.
 
-![Webpack Config Screenshot](webpackconfig.png)
+![Webpack Config Screenshot](/assets/images/webpackconfig.png)
 _I have cropped the first 55 lines to keep image size small._😎
 
 ### Loaders
@@ -347,7 +347,7 @@ We define plugin in the `plugins` array. Any options for plugins can be set with
 
 Run webpack and open `bundle.js`. We can see `bundle.js` is uglified as shown :
 
-![Uglifyjs Webpack Plugin](bundlejs.png)
+![Uglifyjs Webpack Plugin](/assets/images/bundlejs.png)
 
 Webpack provides a list of plugins [here][4], and some third-party plugins can be found [here][5].
 Simply choose and use.
