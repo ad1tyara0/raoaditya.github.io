@@ -5,7 +5,8 @@ date: 2017-09-20
 comments: true
 ---
 
-A short introduction on [Webpack][1] Javascript module bundler.
+![learn-webpack Screenshot](/assets/images/webpack-logo.png)
+A short introduction on [webpack][1] Javascript module bundler.
 
 ## Prerequisites
 
