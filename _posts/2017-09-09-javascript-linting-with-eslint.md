@@ -26,11 +26,13 @@ ESLint is written using Node.js and can be installed using npm.
     ```shell
     $ npm install eslint --save-dev
     ```
+    {: data-title="Bash"}
 
 2. Setup a configuration file
      ```shell
      $ ./node_modules/.bin/eslint --init
      ```
+     {: data-title="Bash"}
 
     This will create `.eslintrc` configuration file by guiding you through a brief setup process.  
 
@@ -40,6 +42,7 @@ ESLint is written using Node.js and can be installed using npm.
 
     $ ./node_modules/.bin/eslint yourfile.js
     ```
+    {: data-title="Bash"}
 
 **If you want to install ESLint globally than follow these steps:**
 
@@ -47,16 +50,19 @@ ESLint is written using Node.js and can be installed using npm.
     ```shell
     $ npm install -g eslint
     ```
+    {: data-title="Bash"}
 
 2. Setup configuration file
     ```shell
     $ eslint --init
     ```
+    {: data-title="Bash"}
 
 3. Run eslint on any file
     ```shell
     $ eslint yourfile.js
     ```
+    {: data-title="Bash"}
 
 ## Cool, but how does it work?
 
@@ -101,6 +107,7 @@ Open the `.eslintrc` file and you'll see the following JSON object. ( if you cho
     }
 }
 ```
+{: data-title="JSON"}
 
 ESLint will set up `.eslintrc` file with some initial settings depending on the options you choose. We can see few properties and their values here. We can change, remove, or override these values.
 
@@ -112,11 +119,13 @@ By default, ESLint will parse ES5. `"es6": true` will enable ESLint for ES6.
     "es6": true
 }
 ```
+{: data-title="JSON"}
 
 Next `extends` property extends the _recommended rules_ provided by ESLint.
 ```json
 "extends": "eslint:recommended"
 ```
+{: data-title="JSON"}
 
 With `parserOptions` you can define features that are not in ECMAScript 5 by default, such as _ES6 syntax_, _modules_, _jsx_ etc.
 ```json
@@ -139,6 +148,7 @@ With `parserOptions` you can define features that are not in ECMAScript 5 by def
     ]
 }
 ```
+{: data-title="JSON"}
 
 Finally, we have the `rules` object. Each `rule` can be set to one of the three values; `error`, `warn` and `off`. Each rule will check the javascript file for syntactic or logical consistency. To know about what a particular rule does you should refer to [this page][3]. 
 Depending on the value set for each rule, ESLint will throw an **error** if the value of the rule is set as `error` or **warn** you for the value set to `warn` or you can decide not to check for the rule by setting its value `off`. 
@@ -149,6 +159,7 @@ ESLint is powerful as it allows you to create your **own** rules.
     "es6": true
 }
 ```
+{: data-title="JSON"}
 
 In our .eslintrc file, we have four rules defined in `rules` object. There are of course more than four rules defined in our config file, as we have extended `eslint:recommended` property. The rules defined in `rules` object **override** the corresponding rules set by `eslint:recommended`.
 
