@@ -32,6 +32,7 @@ yarn add -D babel-cli
 # Using npm
 npm install --save-dev babel-cli
 ```
+{: data-title="Bash"}
 
 Locally installing babel will let you run different versions of babel for different projects. 
 
@@ -44,6 +45,7 @@ yarn add global babel-cli
 # Using npm
 npm install --global babel-cli
 ```
+{: data-title="Bash"}
 
 
 
@@ -64,10 +66,14 @@ Let's use Babel and learn some useful commands.
 Create a directory **babel-demo** and install Babel (locally).
 ```shell
 mkdir babel-demo && cd babel-demo
+
 touch index.html source.js
+
 yarn init -y
+
 yarn add -D babel-cli
 ```
+{: data-title="Bash"}
 
 Fill `index.html` with following code :
 
@@ -83,6 +89,7 @@ Fill `index.html` with following code :
 </body>
 </html>
 ```
+{: data-title="HTML"}
 
 and `source.js`:
 
@@ -95,6 +102,7 @@ setInterval(() => {
   document.body.style.backgroundColor = bgcolor[Math.floor(Math.random()*4)];
 }, 3000);
 ```
+{: data-title="Javascript"}
 
 We are using **arrow function** and **let** keyword here which are introduced in ECMAScript 2015. `Arrow function` uses a fat arrow symbol, doesn't use function keyword, and for single statements braces are optional. The `let` keyword introduces block scoping to Javascript. Let's transpile this ES6 code to ES5 using Babel.
 Enter the following command in your command-line :
@@ -102,6 +110,7 @@ Enter the following command in your command-line :
 ```shell
 node_modules/babel-cli/bin/babel.js source.js
 ```
+{: data-title="Bash"}
 
 You can see the following output as a result :
 
@@ -112,8 +121,10 @@ setInterval(() => {
   document.body.style.backgroundColor = bgcolor[Math.floor(Math.random()*4)];
 }, 3000);
 ```
+{: data-title="Bash"}
 
 Note: `node_modules/babel-cli/bin/babel.js` points to `babel-cli` installed locally.
+{: class="note"}
 
 The babel output is the same ES6 code we wrote. So, why didn't babel apply any transformations to `source.js` ?
 
@@ -131,12 +142,14 @@ yarn add -D babel-plugin-transform-es2015-arrow-functions babel-plugin-transform
 # Using npm
 npm install --save-dev babel-plugin-transform-es2015-arrow-functions babel-plugin-transform-es2015-block-scoping
 ```
+{: data-title="Bash"}
 
 In order to use the plugins we pass the `--plugin` option with comma separated list of plugins to help babel transpile our `source.js`.
 
 ```shell
 node_modules/babel-cli/bin/babel.js --plugins=transform-es2015-arrow-functions,babel-plugin-transform-es2015-block-scoping source.js
 ```
+{: data-title="Bash"}
 
 Babel will output the following result :
 ```shell
@@ -148,6 +161,7 @@ setInterval(function () {
   document.body.style.backgroundColor = bgcolor[Math.floor(Math.random() * 4)];
 }, 3000);
 ```
+{: data-title="Bash"}
 
 We can see babel transpiles our _**arrow function**_ to _**anonymous function expression**_ and replaces the _**let**_ keyword with _**var**_. This code is compatible with all the browsers that have implemented ES5, which is about [97.88%][9].
 
@@ -171,6 +185,7 @@ Create `.babelrc` file and list the plugin as shown:
   ]
 }
 ```
+{: data-title="Javascript"}
 
 Include the following script in `package.json`:
 ```json
@@ -180,6 +195,7 @@ Include the following script in `package.json`:
   }
 }
 ```
+{: data-title="Javascript"}
 
 Now instead of typing `node_modules/babel-cli/bin/babel.js` every time we want to use babel we can use `yarn babel` or `npm run babel` to compile our file. 
 
@@ -192,6 +208,7 @@ yarn babel source.js
 # Using npm
 npm run babel source.js
 ```
+{: data-title="Bash"}
 
 We don't need to specify any plugins since babel will search for `.babelrc` file for configuration. We get the same compiled output as before.
 
@@ -204,6 +221,7 @@ setInterval(function () {
   document.body.style.backgroundColor = bgcolor[Math.floor(Math.random() * 4)];
 }, 3000);
 ```
+{: data-title="Bash"}
 
 It's likely that we will use many plugins for all the new feature we want to use and `.babelrc` makes it easier to list and maintain all plugins and presets(we'll learn about presets next) and their options.
 
@@ -216,6 +234,7 @@ yarn babel source.js -o main.js
 # Using npm
 npm run babel source.js -o main.js
 ```
+{: data-title="Bash"}
 
 Open `main.js` to see the compiled output.
 
@@ -231,6 +250,7 @@ Now, there is an opportunity here to make use of `npm-scripts`. Since we know th
   }
 }
 ```
+{: data-title="Javascript"}
 
 Now instead of typing `yarn babel source.js -o main.js` we'll simply use `yarn babel:build`.
 
@@ -253,6 +273,7 @@ yarn remove -D babel-plugin-transform-es2015-arrow-functions babel-plugin-transf
 # Using npm
 npm uninstall --save-dev babel-plugin-transform-es2015-arrow-functions babel-plugin-transform-es2015-block-scoping
 ```
+{: data-title="Bash"}
 
 We will install a preset from the [list of presets available][2]. We choose `babel-preset-env`, as it won't compile ES2015+ syntax if it knows that the target browsers support it. It's the "Autoprefixer for Javascript". It compiles only what we use to make our bundle size smaller. 
 
@@ -263,6 +284,7 @@ yarn add -D babel-preset-env
 # Using npm
 npm install --save-dev babel-preset-env
 ```
+{: data-title="Bash"}
 
 Remove the `plugins` property from the `.babelrc` file and include the following property.
 
@@ -271,6 +293,7 @@ Remove the `plugins` property from the `.babelrc` file and include the following
    "presets": ["env"]
 }
 ```
+{: data-title="Javascript"}
 
 Run `yarn babel:build` or `npm run babel:build` and confirm that babel has transpiled your code, as it did use `plugins` array with plugins installed separately.
 
@@ -285,6 +308,7 @@ yarn babel source.js --presets es2015
 # Using npm
 npm run babel source.js --presets es2015
 ```
+{: data-title="Bash"}
 
 When using more than one preset we specify the option using a comma-separated list of presets, like so: `--presets=es2015,react`.
 
@@ -304,6 +328,7 @@ The following code shows some of the configuration options available for `preset
     }]
   ],
 ```
+{: data-title="Javascript"}
 
 We have two options in the configuration object. The `targets.browsers` property is a list of environments that we want to support. We want to target the last two versions of every major browser and all the browser versions that have more than 10% of usage. It uses [browserlist][3] to specify the target browsers.
 
@@ -333,6 +358,7 @@ yarn add babel-polyfill
 # Using npm
 npm install --save babel-polyfill
 ```
+{: data-title="Bash"}
 
 For npm we use `--save` and **not** `--save-dev` because `babel-polyfill` is a _dependency_ not a _dev dependency_. For the same reason, we exclude `-D` from yarn command.
 
@@ -351,6 +377,7 @@ To use the polyfill we include it in `index.html` file like so :
 </body>
 </html>
 ```
+{: data-title="HTML"}
 
 `polyfill.js` should be sourced before any other script. 
 
@@ -363,7 +390,7 @@ require("babel-polyfill");
 // Using 'import'
 import "babel-polyfill";
 ```
-
+{: data-title="Javascript"}
 
 
 ## Conclusion
