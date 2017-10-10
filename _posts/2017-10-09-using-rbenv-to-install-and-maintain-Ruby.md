@@ -8,7 +8,7 @@ comments: true
 I haven't learned [Ruby][1] but I do use [Bundler][2] it's dependency management programme. While trying to update the previous post I ran across a problem with Ruby, for which I spent more than 30 minutes to find and try the solutions. I did find the solution that worked - reinstalling Ruby. But this time I used a Ruby version management tool [rbenv][3].
 
 
-## The problem.
+## The problem
 
 This blog is created using Jekyll on a Mac. Mac comes with Ruby pre-installed, but this version of Ruby is usually old. My system(macOS) Ruby version is at `v2.0.0` while the latest stable release is at `v2.4.2`. 
 
