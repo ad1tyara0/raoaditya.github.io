@@ -677,8 +677,8 @@ header h1 a:hover {
   color: #3b423c;
 }
 
-header h1 a:active {
-  color: #0f1314;
+header h1 a:hover {
+  color: #ff6732;
 }
 
 /* HEADER - NAVIGATION
@@ -692,6 +692,7 @@ nav {
 nav a {
   display: block;
   font-size: 1.1em;
+  font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   padding: 1em 0;
@@ -710,7 +711,7 @@ nav a:visited {
 nav a:focus,
 nav a:hover {
   border-bottom: none;
-  background-color: #f9d475;
+  background-color: #EEE9AE;
   color: #000000;
 }
 
@@ -846,8 +847,9 @@ footer > p + p {
 
 .blog-list li time {
   font-size: 0.6em;
+  font-weight: 700;
   padding: 2px 5px;
-  background-color: #E7E700;
+  background-color: #EEE9AE;
   color: #000;
   margin-right: 1em;
 }
@@ -890,10 +892,11 @@ footer > p + p {
 
 p.post-date {
   font-size: 0.75em;
+  font-weight: 700;
   max-width: 200px;
   margin: 0.5rem 0 4rem;
   padding: 0 10px;
-  background-color: #E7E700;
+  background-color: #EEE9AE;
   color: #000;
 }
 
@@ -1162,7 +1165,6 @@ code {
   header {
     margin: 0;
     padding: 1rem 0;
-    border-bottom: 2px solid #c8bc9d;
   }
 
   header h1 {
@@ -1210,14 +1212,15 @@ code {
 
   .nav {
     max-width: 18.75em;
-    margin: 0 auto;
+    margin: 0 0 0 auto;
+    padding-right: 0.5em;
   }
 
   nav a {
-    display: inline-block;
+    display: block;
     font-size: 1.1em;
     text-transform: uppercase;
-    text-align: center;
+    text-align: right;
     padding: 0;
     margin: 0;
     letter-spacing: 0.12em;
@@ -1407,4 +1410,5 @@ code {
     white-space: pre;
   }
 }
+
 
