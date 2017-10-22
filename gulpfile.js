@@ -103,21 +103,14 @@ gulp.task('clean:styles', function(callback) {
 });
 
 // Images Task
-
- gulp.task('build:images', function() {
+ 
+gulp.task('build:images', function() {
     gulp.src(paths.imageFilesGlob)
-        .pipe(imagemin([
-            imagemin.svgo({
-                plugins: [
-                    {removeViewBox: false},
-                    {cleanupIDs: false}
-                ]
-            })
-        ]))
+        .pipe(imagemin())
         .pipe(gulp.dest(paths.jekyllImageFiles))
         .pipe(gulp.dest(paths.siteImageFiles))
         .pipe(browserSync.stream());
-});
+}); 
 
 // Deletes processed images.
 gulp.task('clean:images', function(callback) {
