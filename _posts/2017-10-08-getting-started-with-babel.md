@@ -5,7 +5,7 @@ date: 2017-10-08
 comments: true
 ---
 
-![Babel Logo](/assets/images/babel-logo.png)
+![Babel Logo](http://res.cloudinary.com/adityar/image/upload/v1509028515/adityarao/babel-logo_yovc4x.png)
 
 
 [Babel][5] is a Javascript transpiler. A transpiler is a compiler that converts source code from one language to another language. In this case, Babel coverts latest Javascript language features into browser compatible version.
