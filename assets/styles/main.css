@@ -741,6 +741,11 @@ nav a:hover {
   margin: 3em auto 0;
 }
 
+.avatar img {
+width: 130px;
+height: 130px;
+}
+
 .bio > p {
   max-width: 35em;
   text-align: center;
@@ -1314,6 +1319,9 @@ code {
     width: 40%;
   }
 
+  .avatar div {
+    margin-top: 1em;
+  }
     /* BLOCKQUOTES
   ========================================================================== */
 
