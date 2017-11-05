@@ -5,7 +5,7 @@ date: 2017-09-20
 comments: true
 ---
 
-![Webpack Logo](http://res.cloudinary.com/adityar/image/upload/v1509028531/adityarao/webpack-logo_kua5wi.png)
+![Webpack Logo](https://res.cloudinary.com/adityar/image/upload/v1509028531/adityarao/webpack-logo_kua5wi.png)
 A short introduction on [webpack][1] Javascript module bundler.
 
 ## Prerequisites
@@ -163,7 +163,7 @@ The directory structure should be like so:
 
 Open `learn-webpack` in any browser and check if it's working.
 
-![learn-webpack Screenshot](http://res.cloudinary.com/adityar/image/upload/v1509028548/adityarao/introtowebpack_fcfhic.png)
+![learn-webpack Screenshot](https://res.cloudinary.com/adityar/image/upload/v1509028548/adityarao/introtowebpack_fcfhic.png)
 
 We see our CSS and javascript are working. Open `devtools > console` to view `console.log` statement from javascript file.
 
@@ -246,7 +246,7 @@ You can name the config file something other than `webpack.config.js`. In that c
 Check `dist` folder for webpack generated `bundle.js` file. In `index.html` replace `main.js` with `bundle.js` and check if it's working.
 If you open `bundle.js` you will see the Webpack bootstrap code. This code is what makes webpack work with your config. Scroll to the end to see our `console.log('Hello console.')` line from `main.js`.
 
-![Webpack Config Screenshot](http://res.cloudinary.com/adityar/image/upload/v1509028542/adityarao/webpackconfig_tcvdtf.png)
+![Webpack Config Screenshot](https://res.cloudinary.com/adityar/image/upload/v1509028542/adityarao/webpackconfig_tcvdtf.png)
 _I have cropped the first 55 lines to keep image size small._😎
 
 ### Loaders
@@ -348,7 +348,7 @@ We define plugin in the `plugins` array. Any options for plugins can be set with
 
 Run webpack and open `bundle.js`. We can see `bundle.js` is uglified as shown :
 
-![Uglifyjs Webpack Plugin](http://res.cloudinary.com/adityar/image/upload/v1509028537/adityarao/bundlejs_jypqmn.png)
+![Uglifyjs Webpack Plugin](https://res.cloudinary.com/adityar/image/upload/v1509028537/adityarao/bundlejs_jypqmn.png)
 
 Webpack provides a list of plugins [here][4], and some third-party plugins can be found [here][5].
 Simply choose and use.
