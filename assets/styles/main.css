@@ -508,7 +508,49 @@ template {
 /* ==========================================================================
    GLOBAL STYLES
    ========================================================================== */
+/* FONTS */
 
+/* Quicksand */
+@font-face {
+  font-family: 'quicksandbold';
+  src: url('../fonts/Quicksand/quicksand-bold-webfont.woff2') format('woff2'),
+       url('../fonts/Quicksand/quicksand-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'quicksanditalic';
+  src: url('../fonts/Quicksand/quicksand-italic-webfont.woff2') format('woff2'),
+       url('../fonts/Quicksand/quicksand-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'quicksandregular';
+  src: url('../fonts/Quicksand/quicksand-regular-webfont.woff2') format('woff2'),
+       url('../fonts/Quicksand/quicksand-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* PT Mono */
+@font-face {
+  font-family: 'pt_monobold';
+  src: url('../fonts/PTMono/ptm75f-webfont.woff2') format('woff2'),
+       url('../fonts/PTMono/ptm75f-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'pt_monoregular';
+  src: url('../fonts/PTMono/ptm55f-webfont.woff2') format('woff2'),
+       url('../fonts/PTMono/ptm55f-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* Box Sizing
   ========================================================================== */
@@ -532,7 +574,16 @@ html {
 
 body {
   background-color: #ffffff;
-  font-family: 'Quicksand', 'Avenir Next', 'SegoeUI', 'Arial', sans-serif;
+  font-family: 'Quicksand'
+              -apple-system, 
+              BlinkMacSystemFont, 
+              "Segoe UI", 
+              Roboto, 
+              Oxygen-Sans, 
+              Ubuntu, 
+              Cantarell, 
+              "Helvetica Neue", 
+              sans-serif;
   font-size: 15px;
   font-size: -webkit-calc(15px + 6 * ((100vw - 380px) / 760));
   font-size: calc(15px + 6 * ((100vw - 380px) / 760));
@@ -543,14 +594,12 @@ body {
 }
 
 @media screen and (min-width: 1140px) {
-
   body {
     font-size: 21px;
   }
 }
 
 @media screen and (max-width: 380px) {
-
   body {
     font-size: 15px;
   }
@@ -614,10 +663,10 @@ a:active {
   ========================================================================== */
 
 img {
-  width: auto;
-  max-width: 100%;
-  /* max-width allows image to be responsive. */
   height: auto;
+  width: auto;
+  /* max-width allows image to be responsive. */
+  max-width: 100%;
 }
 
 /* RESET MARGIN & PADDING TO 0.
@@ -736,13 +785,13 @@ nav a:hover {
 }
 
 .avatar div {
-  width: 130px;
+  width: 90px;
   height: 130px;
   margin: 3em auto 0;
 }
 
 .avatar img {
-width: 130px;
+width: 90px;
 height: 130px;
 }
 
@@ -1270,7 +1319,7 @@ code {
   }
 
   .avatar div {
-    width: 130px;
+    width: 90px;
     height: 130px;
     margin: 0 auto;
   }

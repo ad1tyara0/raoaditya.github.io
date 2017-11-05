@@ -32,26 +32,9 @@ var supported = [
 ];
 // CSS Files for build:styles Task.
 var cssFiles = [paths.cssFiles + '/normalize.css', paths.cssFiles + '/syntax.css', paths.cssFiles + '/style.css'];
-/*
-// Rename function for rename task.
-var renameFunction = function (path) {
-         path.extname = ".min.css";
-         return path;
-    };
-// Location to store Source-maps.
-var sourceMapLocation = ['css/*.css', '!css/*.min.css'];
-*/
-// Autoprefixer, Rucksack, Concatenate CSS Files
-/*
-gulp.task('build:styles', function () {
-     return gulp.src(cssFiles)
-       .pipe(postcss([ rucksack({autoprefixer: false}), autoprefixer({browsers: supported})]))
-       .pipe(concat('main.css'))
-       .pipe(gulp.dest(paths.jekyllCssFiles))
-       .pipe(gulp.dest(paths.siteCssFiles))
-       .on('error', gutil.log);
-});
-*/
+
+
+// Styles Task
 gulp.task('build:styles', function() {
     gulp.src(cssFiles)
         .pipe(postcss([ rucksack({autoprefixer: false}), autoprefixer({browsers: supported})]))
@@ -68,29 +51,6 @@ gulp.task('build:styles', function() {
         .on('error', gutil.log);
 });
 
-/* Rename CSS
-gulp.task('rename', ['styles'], function () {
-     return gulp.src(['css/main.css', '!css/*.min.css'])
-       .pipe(rename(renameFunction))
-       .pipe(gulp.dest("css/"));
-});
-
-// Source-maps
-gulp.task('sourcemap', ['rename'], function () {
-     return gulp.src(sourceMapLocation)
-       .pipe(sourcemaps.init())
-       .pipe(sourcemaps.write('maps/'))
-       .pipe(gulp.dest("css/"));
-});
-
-// Minify CSS
-gulp.task('minifyCSS', ['sourcemap'], function () {
-         return gulp.src('css/*.min.css')
-            .pipe(cssnano({ autoprefixer: false }))
-            .pipe(gulp.dest("css/"))
-            .pipe(browserSync.stream());
-});
-*/
 
 // Deletes CSS.
 gulp.task('clean:styles', function(callback) {
@@ -103,7 +63,6 @@ gulp.task('clean:styles', function(callback) {
 });
 
 // Images Task
- 
 gulp.task('build:images', function() {
     gulp.src(paths.imageFilesGlob)
         .pipe(imagemin())
@@ -144,7 +103,6 @@ gulp.task('clean:scripts', function(callback) {
 */
 
 // Places fonts in proper location.
-/*
 gulp.task('build:fonts' , function() {
     return gulp.src(paths.fontFiles + '/**.*')
         .pipe(rename(function(path) {path.dirname = '';}))
@@ -159,7 +117,7 @@ gulp.task('clean:fonts', function(callback) {
     del([paths.jekyllFontFiles, paths.siteFontFiles]);
     callback();
 });
-*/
+
 
 // Runs jekyll build command.
 gulp.task('build:jekyll', function() {
@@ -197,12 +155,12 @@ gulp.task('clean:jekyll', function(callback) {
 // Main clean task.
 // Deletes _site directory and processed assets.
 gulp.task('clean', ['clean:jekyll',
-    'clean:styles', 'clean:images']);
+    'clean:styles', 'clean:images', 'clean:fonts']);
 
 // Builds site anew.
 gulp.task('build', function(callback) {
     runSequence('clean',
-        ['build:styles', 'build:images'],
+        ['build:styles', 'build:images', 'build:fonts'],
         'build:jekyll',
         callback);
 });
