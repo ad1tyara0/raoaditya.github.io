@@ -723,11 +723,7 @@ header h1 a:visited {
 header h1 a:focus,
 header h1 a:hover {
   border-bottom: none;
-  color: #ff6732;
-}
-
-header h1 a:hover {
-  color: #ff6732;
+  color: #00BCD4;
 }
 
 /* HEADER - NAVIGATION
@@ -838,7 +834,7 @@ height: 130px;
 
 .social-m a:focus,
 .social-m a:hover {
-  color: #AA4625;
+  color: #00BCD4;
   border-bottom: none;
 }
 
@@ -925,7 +921,7 @@ footer > p + p {
 
 .post-wrap a:focus,
 .post-wrap a:hover {
-  border-bottom: 2px solid #ff6732;
+  border-bottom: 2px solid #00BCD4;
 }
 
 .post-wrap a:active {
@@ -1245,7 +1241,7 @@ code {
 
   header h1 a:focus,
   header h1 a:hover {
-    color: #ff6732;
+    color: #00BCD4;
   }
 
   header h1 a:active {
