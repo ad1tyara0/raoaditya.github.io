@@ -755,8 +755,7 @@ nav a:visited {
 nav a:focus,
 nav a:hover {
   border-bottom: none;
-  background-color: #EEE9AE;
-  color: #000000;
+  color: #00BCD4;
 }
 
 /* SECTION - ABOUT
@@ -888,6 +887,10 @@ footer > p + p {
   margin: 0 auto;
 }
 
+.blog-list a:hover, .blog-list a:focus {
+  border-bottom: 1px solid #00BCD4;
+  color: #00BCD4;
+}
 .blog-list li {
   font-size: 1.2em;
   text-align: left;
