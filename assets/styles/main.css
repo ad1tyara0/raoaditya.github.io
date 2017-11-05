@@ -860,6 +860,11 @@ footer > p + p {
   margin-top: 0.5em;
 }
 
+footer p a:hover, footer p a:focus {
+  color: #00BCD4;
+  border-bottom: 1px solid #00BCD4;
+}
+
 .half,
 .one,
 .one-fourth,
@@ -924,7 +929,8 @@ footer > p + p {
 
 .post-wrap a:focus,
 .post-wrap a:hover {
-  border-bottom: 2px solid #00BCD4;
+  border-bottom: 2px solid #00bcd4;
+  color: #00BCD4;
 }
 
 .post-wrap a:active {
@@ -1289,6 +1295,7 @@ code {
   nav a:focus,
   nav a:hover {
     background-color: #fff;
+    color: #00bcd4;
   }
 
   /* MAIN
