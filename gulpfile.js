@@ -102,9 +102,10 @@ gulp.task('clean:scripts', function(callback) {
 });
 */
 
+/*
 // Places fonts in proper location.
 gulp.task('build:fonts' , function() {
-    return gulp.src(paths.fontFiles + '/**.*')
+    return gulp.src(paths.fontFiles + '/**\*.{eot,svg,ttf,woff,woff2}')
         .pipe(rename(function(path) {path.dirname = '';}))
         .pipe(gulp.dest(paths.jekyllFontFiles))
         .pipe(gulp.dest(paths.siteFontFiles))
@@ -113,6 +114,22 @@ gulp.task('build:fonts' , function() {
 });
 
 // Deletes processed fonts.
+gulp.task('clean:fonts', function(callback) {
+    del([paths.jekyllFontFiles, paths.siteFontFiles]);
+    callback();
+});
+*/
+
+// Fonts
+gulp.task('build:fonts', function() {
+    return gulp.src(paths.fontFiles + '/**/*')
+        .pipe(gulp.dest(paths.jekyllFontFiles))
+        .pipe(gulp.dest(paths.siteFontFiles))
+        .pipe(browserSync.stream())
+        .on('error', gutil.log);
+});
+
+
 gulp.task('clean:fonts', function(callback) {
     del([paths.jekyllFontFiles, paths.siteFontFiles]);
     callback();
@@ -154,8 +171,8 @@ gulp.task('clean:jekyll', function(callback) {
 
 // Main clean task.
 // Deletes _site directory and processed assets.
-gulp.task('clean', ['clean:jekyll',
-    'clean:styles', 'clean:images', 'clean:fonts']);
+gulp.task('clean', ['clean:jekyll', 
+    'clean:styles', 'clean:fonts', 'clean:images']);
 
 // Builds site anew.
 gulp.task('build', function(callback) {
