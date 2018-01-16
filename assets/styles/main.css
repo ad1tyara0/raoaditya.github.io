@@ -884,6 +884,11 @@ footer p a:hover, footer p a:focus {
 /* BLOG PAGE STYLES
   ========================================================================== */
 
+img + em { 
+  font-size: medium;
+  margin-bottom: 0.4em;
+}
+
 .blog-wrap {
   max-width: 42em;
   margin: 0 auto;
